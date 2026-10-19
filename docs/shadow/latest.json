@@ -1,0 +1,4432 @@
+{
+  "run_at": "2026-10-19T14:39:26.398965+00:00",
+  "tickers": {
+    "AAPL": {
+      "earnings": {
+        "checks": {
+          "date": {
+            "matched": 2,
+            "of": 2
+          },
+          "hour": {
+            "matched": 1,
+            "of": 1
+          },
+          "eps_actual": {
+            "matched": 0,
+            "of": 0
+          },
+          "revenue_actual": {
+            "matched": 0,
+            "of": 0
+          }
+        },
+        "rows": [
+          {
+            "year": 2027,
+            "quarter": 1,
+            "finnhub": {
+              "symbol": "AAPL",
+              "date": "2027-01-27",
+              "hour": "",
+              "quarter": 1,
+              "year": 2027,
+              "epsEstimate": 2.9499,
+              "epsActual": null,
+              "revenueEstimate": 156248942076,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "AAPL",
+              "date": "2027-01-27",
+              "hour": "amc",
+              "quarter": 1,
+              "year": 2027,
+              "epsEstimate": 3.245,
+              "epsActual": null,
+              "revenueEstimate": 167441011555,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": 0.2951
+          },
+          {
+            "year": 2026,
+            "quarter": 4,
+            "finnhub": {
+              "symbol": "AAPL",
+              "date": "2026-11-02",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 2.0225,
+              "epsActual": null,
+              "revenueEstimate": 115330851831,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "AAPL",
+              "date": "2026-11-02",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 2.245,
+              "epsActual": null,
+              "revenueEstimate": 119348136356,
+              "revenueActual": null,
+              "dateStatus": "confirmed",
+              "dateSource": "ir-calendar:q4",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": 0.2225
+          }
+        ]
+      },
+      "news": {
+        "finnhub_items": 248,
+        "finnhub_kept_by_loom": 11,
+        "yarn_items": 134,
+        "yarn_kept_by_loom": 1,
+        "headline_recall": 0.0,
+        "median_yarn_lead_seconds": null
+      },
+      "recommendations": {
+        "periods": [
+          {
+            "period": "2026-09-01",
+            "finnhub": [
+              12,
+              22,
+              15,
+              3,
+              1
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-08-01",
+            "finnhub": [
+              13,
+              24,
+              14,
+              3,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-07-01",
+            "finnhub": [
+              13,
+              23,
+              16,
+              2,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-06-01",
+            "finnhub": [
+              14,
+              24,
+              15,
+              2,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          }
+        ]
+      }
+    },
+    "MSFT": {
+      "earnings": {
+        "checks": {
+          "date": {
+            "matched": 1,
+            "of": 2
+          },
+          "hour": {
+            "matched": 0,
+            "of": 0
+          },
+          "eps_actual": {
+            "matched": 0,
+            "of": 0
+          },
+          "revenue_actual": {
+            "matched": 0,
+            "of": 0
+          }
+        },
+        "rows": [
+          {
+            "year": 2027,
+            "quarter": 2,
+            "finnhub": {
+              "symbol": "MSFT",
+              "date": "2027-01-26",
+              "hour": "",
+              "quarter": 2,
+              "year": 2027,
+              "epsEstimate": 4.9486,
+              "epsActual": null,
+              "revenueEstimate": 97439457171,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "MSFT",
+              "date": "2027-01-26",
+              "hour": "amc",
+              "quarter": 2,
+              "year": 2027,
+              "epsEstimate": 6.145,
+              "epsActual": null,
+              "revenueEstimate": 95920042329,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": 1.1964
+          },
+          {
+            "year": 2027,
+            "quarter": 1,
+            "finnhub": {
+              "symbol": "MSFT",
+              "date": "2026-10-28",
+              "hour": "",
+              "quarter": 1,
+              "year": 2027,
+              "epsEstimate": 4.8214,
+              "epsActual": null,
+              "revenueEstimate": 92463188557,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "MSFT",
+              "date": "2026-10-27",
+              "hour": "amc",
+              "quarter": 1,
+              "year": 2027,
+              "epsEstimate": 4.705,
+              "epsActual": null,
+              "revenueEstimate": 91671249343,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": -0.1164
+          }
+        ]
+      },
+      "news": {
+        "finnhub_items": 250,
+        "finnhub_kept_by_loom": 13,
+        "yarn_items": 223,
+        "yarn_kept_by_loom": 3,
+        "headline_recall": 0.0,
+        "median_yarn_lead_seconds": null
+      },
+      "recommendations": {
+        "periods": [
+          {
+            "period": "2026-09-01",
+            "finnhub": [
+              23,
+              41,
+              5,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-08-01",
+            "finnhub": [
+              23,
+              41,
+              5,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-07-01",
+            "finnhub": [
+              23,
+              40,
+              5,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-06-01",
+            "finnhub": [
+              23,
+              38,
+              5,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          }
+        ]
+      }
+    },
+    "NVDA": {
+      "earnings": {
+        "checks": {
+          "date": {
+            "matched": 1,
+            "of": 1
+          },
+          "hour": {
+            "matched": 1,
+            "of": 1
+          },
+          "eps_actual": {
+            "matched": 0,
+            "of": 0
+          },
+          "revenue_actual": {
+            "matched": 0,
+            "of": 0
+          }
+        },
+        "rows": [
+          {
+            "year": 2027,
+            "quarter": 3,
+            "finnhub": {
+              "symbol": "NVDA",
+              "date": "2026-11-17",
+              "hour": "amc",
+              "quarter": 3,
+              "year": 2027,
+              "epsEstimate": 2.5259,
+              "epsActual": null,
+              "revenueEstimate": 111339312780,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "NVDA",
+              "date": "2026-11-17",
+              "hour": "amc",
+              "quarter": 3,
+              "year": 2027,
+              "epsEstimate": 2.805,
+              "epsActual": null,
+              "revenueEstimate": 111469183886,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": 0.2791
+          }
+        ]
+      },
+      "news": {
+        "finnhub_items": 250,
+        "finnhub_kept_by_loom": 2,
+        "yarn_items": 199,
+        "yarn_kept_by_loom": 1,
+        "headline_recall": 0.5,
+        "median_yarn_lead_seconds": -7860
+      },
+      "recommendations": {
+        "periods": [
+          {
+            "period": "2026-09-01",
+            "finnhub": [
+              24,
+              41,
+              3,
+              1,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-08-01",
+            "finnhub": [
+              23,
+              41,
+              3,
+              1,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-07-01",
+            "finnhub": [
+              24,
+              40,
+              4,
+              1,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-06-01",
+            "finnhub": [
+              24,
+              39,
+              4,
+              1,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          }
+        ]
+      }
+    },
+    "AMZN": {
+      "earnings": {
+        "checks": {
+          "date": {
+            "matched": 2,
+            "of": 2
+          },
+          "hour": {
+            "matched": 2,
+            "of": 2
+          },
+          "eps_actual": {
+            "matched": 0,
+            "of": 0
+          },
+          "revenue_actual": {
+            "matched": 0,
+            "of": 0
+          }
+        },
+        "rows": [
+          {
+            "year": 2026,
+            "quarter": 4,
+            "finnhub": {
+              "symbol": "AMZN",
+              "date": "2027-02-03",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 2.4974,
+              "epsActual": null,
+              "revenueEstimate": 249376822456,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "AMZN",
+              "date": "2027-02-03",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 4.58,
+              "epsActual": null,
+              "revenueEstimate": 252038486429,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": 2.0826
+          },
+          {
+            "year": 2026,
+            "quarter": 3,
+            "finnhub": {
+              "symbol": "AMZN",
+              "date": "2026-10-29",
+              "hour": "amc",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 1.9998,
+              "epsActual": null,
+              "revenueEstimate": 206192815298,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "AMZN",
+              "date": "2026-10-29",
+              "hour": "amc",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 4.58,
+              "epsActual": null,
+              "revenueEstimate": 212804598527,
+              "revenueActual": null,
+              "dateStatus": "confirmed",
+              "dateSource": "ir-calendar:q4",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": 2.5802
+          }
+        ]
+      },
+      "news": {
+        "finnhub_items": 248,
+        "finnhub_kept_by_loom": 9,
+        "yarn_items": 198,
+        "yarn_kept_by_loom": 5,
+        "headline_recall": 0.111,
+        "median_yarn_lead_seconds": -7599
+      },
+      "recommendations": {
+        "periods": [
+          {
+            "period": "2026-09-01",
+            "finnhub": [
+              20,
+              49,
+              5,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-08-01",
+            "finnhub": [
+              21,
+              49,
+              5,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-07-01",
+            "finnhub": [
+              21,
+              49,
+              5,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-06-01",
+            "finnhub": [
+              22,
+              49,
+              5,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          }
+        ]
+      }
+    },
+    "GOOGL": {
+      "earnings": {
+        "checks": {
+          "date": {
+            "matched": 2,
+            "of": 2
+          },
+          "hour": {
+            "matched": 2,
+            "of": 2
+          },
+          "eps_actual": {
+            "matched": 0,
+            "of": 0
+          },
+          "revenue_actual": {
+            "matched": 0,
+            "of": 0
+          }
+        },
+        "rows": [
+          {
+            "year": 2026,
+            "quarter": 4,
+            "finnhub": {
+              "symbol": "GOOGL",
+              "date": "2027-02-02",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 3.4487,
+              "epsActual": null,
+              "revenueEstimate": 146838019859,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "GOOGL",
+              "date": "2027-02-02",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 7.37,
+              "epsActual": null,
+              "revenueEstimate": 140023123291,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": 3.9213
+          },
+          {
+            "year": 2026,
+            "quarter": 3,
+            "finnhub": {
+              "symbol": "GOOGL",
+              "date": "2026-10-28",
+              "hour": "amc",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 3.0983,
+              "epsActual": null,
+              "revenueEstimate": 131763712514,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "GOOGL",
+              "date": "2026-10-28",
+              "hour": "amc",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 7.42,
+              "epsActual": null,
+              "revenueEstimate": 125897676131,
+              "revenueActual": null,
+              "dateStatus": "confirmed",
+              "dateSource": "ir-calendar:q4",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": 4.3217
+          }
+        ]
+      },
+      "news": {
+        "finnhub_items": 246,
+        "finnhub_kept_by_loom": 34,
+        "yarn_items": 186,
+        "yarn_kept_by_loom": 7,
+        "headline_recall": 0.029,
+        "median_yarn_lead_seconds": -7552
+      },
+      "recommendations": {
+        "periods": [
+          {
+            "period": "2026-09-01",
+            "finnhub": [
+              20,
+              43,
+              7,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-08-01",
+            "finnhub": [
+              20,
+              42,
+              8,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-07-01",
+            "finnhub": [
+              18,
+              42,
+              9,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-06-01",
+            "finnhub": [
+              19,
+              42,
+              9,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          }
+        ]
+      }
+    },
+    "META": {
+      "earnings": {
+        "checks": {
+          "date": {
+            "matched": 2,
+            "of": 2
+          },
+          "hour": {
+            "matched": 2,
+            "of": 2
+          },
+          "eps_actual": {
+            "matched": 0,
+            "of": 0
+          },
+          "revenue_actual": {
+            "matched": 0,
+            "of": 0
+          }
+        },
+        "rows": [
+          {
+            "year": 2026,
+            "quarter": 4,
+            "finnhub": {
+              "symbol": "META",
+              "date": "2027-01-26",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 8.4497,
+              "epsActual": null,
+              "revenueEstimate": 75149799959,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "META",
+              "date": "2027-01-26",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 10.395,
+              "epsActual": null,
+              "revenueEstimate": 78171711640,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": 1.9453
+          },
+          {
+            "year": 2026,
+            "quarter": 3,
+            "finnhub": {
+              "symbol": "META",
+              "date": "2026-10-21",
+              "hour": "amc",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 6.3122,
+              "epsActual": null,
+              "revenueEstimate": 64569820807,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "META",
+              "date": "2026-10-21",
+              "hour": "amc",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 2.575,
+              "epsActual": null,
+              "revenueEstimate": 66880517720,
+              "revenueActual": null,
+              "dateStatus": "confirmed",
+              "dateSource": "ir-calendar:q4",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": -3.7372
+          }
+        ]
+      },
+      "news": {
+        "finnhub_items": 248,
+        "finnhub_kept_by_loom": 71,
+        "yarn_items": 178,
+        "yarn_kept_by_loom": 34,
+        "headline_recall": 0.042,
+        "median_yarn_lead_seconds": -4913
+      },
+      "recommendations": {
+        "periods": [
+          {
+            "period": "2026-09-01",
+            "finnhub": [
+              20,
+              42,
+              9,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-08-01",
+            "finnhub": [
+              21,
+              41,
+              9,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-07-01",
+            "finnhub": [
+              21,
+              42,
+              8,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-06-01",
+            "finnhub": [
+              22,
+              41,
+              9,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          }
+        ]
+      }
+    },
+    "TSLA": {
+      "earnings": {
+        "checks": {
+          "date": {
+            "matched": 1,
+            "of": 2
+          },
+          "hour": {
+            "matched": 2,
+            "of": 2
+          },
+          "eps_actual": {
+            "matched": 0,
+            "of": 0
+          },
+          "revenue_actual": {
+            "matched": 0,
+            "of": 0
+          }
+        },
+        "rows": [
+          {
+            "year": 2026,
+            "quarter": 4,
+            "finnhub": {
+              "symbol": "TSLA",
+              "date": "2027-01-26",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 0.4862,
+              "epsActual": null,
+              "revenueEstimate": 29061344504,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "TSLA",
+              "date": "2027-01-26",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 0.24,
+              "epsActual": null,
+              "revenueEstimate": 30043117925,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": -0.2462
+          },
+          {
+            "year": 2026,
+            "quarter": 3,
+            "finnhub": {
+              "symbol": "TSLA",
+              "date": "2026-10-21",
+              "hour": "amc",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 0.4459,
+              "epsActual": null,
+              "revenueEstimate": 28422467973,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "TSLA",
+              "date": "2026-10-20",
+              "hour": "amc",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 0.39,
+              "epsActual": null,
+              "revenueEstimate": 33896686804,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": -0.0559
+          }
+        ]
+      },
+      "news": {
+        "finnhub_items": 246,
+        "finnhub_kept_by_loom": 10,
+        "yarn_items": 160,
+        "yarn_kept_by_loom": 5,
+        "headline_recall": 0.0,
+        "median_yarn_lead_seconds": null
+      },
+      "recommendations": {
+        "periods": [
+          {
+            "period": "2026-09-01",
+            "finnhub": [
+              10,
+              20,
+              25,
+              5,
+              1
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-08-01",
+            "finnhub": [
+              10,
+              20,
+              24,
+              6,
+              1
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-07-01",
+            "finnhub": [
+              9,
+              20,
+              24,
+              6,
+              1
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-06-01",
+            "finnhub": [
+              9,
+              20,
+              23,
+              7,
+              1
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          }
+        ]
+      }
+    },
+    "JPM": {
+      "earnings": {
+        "checks": {
+          "date": {
+            "matched": 1,
+            "of": 2
+          },
+          "hour": {
+            "matched": 1,
+            "of": 2
+          },
+          "eps_actual": {
+            "matched": 1,
+            "of": 1
+          },
+          "revenue_actual": {
+            "matched": 1,
+            "of": 1
+          }
+        },
+        "rows": [
+          {
+            "year": 2026,
+            "quarter": 4,
+            "finnhub": {
+              "symbol": "JPM",
+              "date": "2027-01-14",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 5.9917,
+              "epsActual": null,
+              "revenueEstimate": 51788221023,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "JPM",
+              "date": "2027-01-11",
+              "hour": "bmo",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 6.305,
+              "epsActual": null,
+              "revenueEstimate": 54425528600,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": 0.3133
+          },
+          {
+            "year": 2026,
+            "quarter": 3,
+            "finnhub": {
+              "symbol": "JPM",
+              "date": "2026-10-13",
+              "hour": "bmo",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 5.958,
+              "epsActual": 5.57,
+              "revenueEstimate": 51729296017,
+              "revenueActual": 50907000000
+            },
+            "yarn": {
+              "symbol": "JPM",
+              "date": "2026-10-13",
+              "hour": "bmo",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 6.735,
+              "epsActual": 5.57,
+              "revenueEstimate": 55173021012,
+              "revenueActual": 50907000000,
+              "dateStatus": "reported",
+              "dateSource": "8-k",
+              "estimateBasis": "model",
+              "epsBasis": "gaap",
+              "epsActualGaap": 5.57
+            },
+            "eps_estimate_delta": 0.777
+          }
+        ]
+      },
+      "news": {
+        "finnhub_items": 245,
+        "finnhub_kept_by_loom": 88,
+        "yarn_items": 216,
+        "yarn_kept_by_loom": 20,
+        "headline_recall": 0.011,
+        "median_yarn_lead_seconds": -3844
+      },
+      "recommendations": {
+        "periods": [
+          {
+            "period": "2026-09-01",
+            "finnhub": [
+              3,
+              15,
+              12,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-08-01",
+            "finnhub": [
+              3,
+              15,
+              12,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-07-01",
+            "finnhub": [
+              3,
+              14,
+              13,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-06-01",
+            "finnhub": [
+              3,
+              14,
+              13,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          }
+        ]
+      }
+    },
+    "BAC": {
+      "earnings": {
+        "checks": {
+          "date": {
+            "matched": 1,
+            "of": 2
+          },
+          "hour": {
+            "matched": 2,
+            "of": 2
+          },
+          "eps_actual": {
+            "matched": 1,
+            "of": 1
+          },
+          "revenue_actual": {
+            "matched": 0,
+            "of": 1
+          }
+        },
+        "rows": [
+          {
+            "year": 2026,
+            "quarter": 4,
+            "finnhub": {
+              "symbol": "BAC",
+              "date": "2027-01-15",
+              "hour": "bmo",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 1.151,
+              "epsActual": null,
+              "revenueEstimate": 31083920741,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "BAC",
+              "date": "2027-01-12",
+              "hour": "bmo",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 1.225,
+              "epsActual": null,
+              "revenueEstimate": 35837093651,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": 0.074
+          },
+          {
+            "year": 2026,
+            "quarter": 3,
+            "finnhub": {
+              "symbol": "BAC",
+              "date": "2026-10-14",
+              "hour": "bmo",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 1.114,
+              "epsActual": 1.08,
+              "revenueEstimate": 30992148343,
+              "revenueActual": 30119000000
+            },
+            "yarn": {
+              "symbol": "BAC",
+              "date": "2026-10-14",
+              "hour": "bmo",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 1.325,
+              "epsActual": 1.08,
+              "revenueEstimate": 32283267687,
+              "revenueActual": null,
+              "dateStatus": "reported",
+              "dateSource": "8-k",
+              "estimateBasis": "model",
+              "epsBasis": "adjusted",
+              "epsActualGaap": 3.23
+            },
+            "eps_estimate_delta": 0.211
+          }
+        ]
+      },
+      "news": {
+        "finnhub_items": 249,
+        "finnhub_kept_by_loom": 18,
+        "yarn_items": 250,
+        "yarn_kept_by_loom": 1,
+        "headline_recall": 0.0,
+        "median_yarn_lead_seconds": null
+      },
+      "recommendations": {
+        "periods": [
+          {
+            "period": "2026-09-01",
+            "finnhub": [
+              6,
+              17,
+              6,
+              0,
+              0
+            ],
+            "yarn": [
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "yarn_firms": 1
+          },
+          {
+            "period": "2026-08-01",
+            "finnhub": [
+              6,
+              17,
+              6,
+              0,
+              0
+            ],
+            "yarn": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-07-01",
+            "finnhub": [
+              6,
+              17,
+              6,
+              0,
+              0
+            ],
+            "yarn": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-06-01",
+            "finnhub": [
+              7,
+              17,
+              5,
+              0,
+              0
+            ],
+            "yarn": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "yarn_firms": 0
+          }
+        ]
+      }
+    },
+    "XOM": {
+      "earnings": {
+        "checks": {
+          "date": {
+            "matched": 1,
+            "of": 2
+          },
+          "hour": {
+            "matched": 0,
+            "of": 0
+          },
+          "eps_actual": {
+            "matched": 0,
+            "of": 0
+          },
+          "revenue_actual": {
+            "matched": 0,
+            "of": 0
+          }
+        },
+        "rows": [
+          {
+            "year": 2026,
+            "quarter": 4,
+            "finnhub": {
+              "symbol": "XOM",
+              "date": "2027-01-28",
+              "hour": "",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 3.4437,
+              "epsActual": null,
+              "revenueEstimate": 107227380785,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "XOM",
+              "date": "2027-01-28",
+              "hour": "bmo",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 2.08,
+              "epsActual": null,
+              "revenueEstimate": 100727362409,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": -1.3637
+          },
+          {
+            "year": 2026,
+            "quarter": 3,
+            "finnhub": {
+              "symbol": "XOM",
+              "date": "2026-10-23",
+              "hour": "",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 3.8736,
+              "epsActual": null,
+              "revenueEstimate": 103044396348,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "XOM",
+              "date": "2026-10-30",
+              "hour": "bmo",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 2.3,
+              "epsActual": null,
+              "revenueEstimate": 104381586836,
+              "revenueActual": null,
+              "dateStatus": "confirmed",
+              "dateSource": "ir-calendar:page",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": -1.5736
+          }
+        ]
+      },
+      "news": {
+        "finnhub_items": 248,
+        "finnhub_kept_by_loom": 21,
+        "yarn_items": 166,
+        "yarn_kept_by_loom": 13,
+        "headline_recall": 0.048,
+        "median_yarn_lead_seconds": -3115
+      },
+      "recommendations": {
+        "periods": [
+          {
+            "period": "2026-09-01",
+            "finnhub": [
+              5,
+              9,
+              16,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-08-01",
+            "finnhub": [
+              6,
+              9,
+              14,
+              1,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-07-01",
+            "finnhub": [
+              7,
+              9,
+              13,
+              1,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-07-01",
+            "finnhub": [
+              7,
+              9,
+              13,
+              1,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          }
+        ]
+      }
+    },
+    "CVX": {
+      "earnings": {
+        "checks": {
+          "date": {
+            "matched": 1,
+            "of": 2
+          },
+          "hour": {
+            "matched": 1,
+            "of": 2
+          },
+          "eps_actual": {
+            "matched": 0,
+            "of": 0
+          },
+          "revenue_actual": {
+            "matched": 0,
+            "of": 0
+          }
+        },
+        "rows": [
+          {
+            "year": 2026,
+            "quarter": 4,
+            "finnhub": {
+              "symbol": "CVX",
+              "date": "2027-01-28",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 4.9993,
+              "epsActual": null,
+              "revenueEstimate": 59980474080,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "CVX",
+              "date": "2027-01-28",
+              "hour": "bmo",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 3.245,
+              "epsActual": null,
+              "revenueEstimate": 58284671526,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": -1.7543
+          },
+          {
+            "year": 2026,
+            "quarter": 3,
+            "finnhub": {
+              "symbol": "CVX",
+              "date": "2026-10-30",
+              "hour": "bmo",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 4.8752,
+              "epsActual": null,
+              "revenueEstimate": 60967780299,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "CVX",
+              "date": "2026-10-29",
+              "hour": "bmo",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 3.705,
+              "epsActual": null,
+              "revenueEstimate": 61316844142,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": -1.1702
+          }
+        ]
+      },
+      "news": {
+        "finnhub_items": 246,
+        "finnhub_kept_by_loom": 20,
+        "yarn_items": 157,
+        "yarn_kept_by_loom": 8,
+        "headline_recall": 0.0,
+        "median_yarn_lead_seconds": null
+      },
+      "recommendations": {
+        "periods": [
+          {
+            "period": "2026-09-01",
+            "finnhub": [
+              7,
+              18,
+              4,
+              1,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-08-01",
+            "finnhub": [
+              8,
+              18,
+              4,
+              1,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-07-01",
+            "finnhub": [
+              7,
+              16,
+              6,
+              1,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-06-01",
+            "finnhub": [
+              7,
+              16,
+              7,
+              1,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          }
+        ]
+      }
+    },
+    "JNJ": {
+      "earnings": {
+        "checks": {
+          "date": {
+            "matched": 1,
+            "of": 2
+          },
+          "hour": {
+            "matched": 1,
+            "of": 2
+          },
+          "eps_actual": {
+            "matched": 1,
+            "of": 1
+          },
+          "revenue_actual": {
+            "matched": 1,
+            "of": 1
+          }
+        },
+        "rows": [
+          {
+            "year": 2026,
+            "quarter": 4,
+            "finnhub": {
+              "symbol": "JNJ",
+              "date": "2027-01-26",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 2.9391,
+              "epsActual": null,
+              "revenueEstimate": 26421548762,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "JNJ",
+              "date": "2027-01-19",
+              "hour": "bmo",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 0.88,
+              "epsActual": null,
+              "revenueEstimate": 26591404017,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": -2.0591
+          },
+          {
+            "year": 2026,
+            "quarter": 3,
+            "finnhub": {
+              "symbol": "JNJ",
+              "date": "2026-10-13",
+              "hour": "bmo",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 2.5631,
+              "epsActual": 2.59,
+              "revenueEstimate": 25532273981,
+              "revenueActual": 25399000000
+            },
+            "yarn": {
+              "symbol": "JNJ",
+              "date": "2026-10-13",
+              "hour": "bmo",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 0.91,
+              "epsActual": 2.59,
+              "revenueEstimate": 25973276201,
+              "revenueActual": 25399000000,
+              "dateStatus": "reported",
+              "dateSource": "8-k",
+              "estimateBasis": "model",
+              "epsBasis": "adjusted",
+              "epsActualGaap": 0.09
+            },
+            "eps_estimate_delta": -1.6531
+          }
+        ]
+      },
+      "news": {
+        "finnhub_items": 249,
+        "finnhub_kept_by_loom": 23,
+        "yarn_items": 217,
+        "yarn_kept_by_loom": 3,
+        "headline_recall": 0.0,
+        "median_yarn_lead_seconds": null
+      },
+      "recommendations": {
+        "periods": [
+          {
+            "period": "2026-09-01",
+            "finnhub": [
+              7,
+              15,
+              9,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-08-01",
+            "finnhub": [
+              7,
+              15,
+              9,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-07-01",
+            "finnhub": [
+              7,
+              14,
+              10,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-06-01",
+            "finnhub": [
+              7,
+              14,
+              10,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          }
+        ]
+      }
+    },
+    "PFE": {
+      "earnings": {
+        "checks": {
+          "date": {
+            "matched": 2,
+            "of": 2
+          },
+          "hour": {
+            "matched": 0,
+            "of": 1
+          },
+          "eps_actual": {
+            "matched": 0,
+            "of": 0
+          },
+          "revenue_actual": {
+            "matched": 0,
+            "of": 0
+          }
+        },
+        "rows": [
+          {
+            "year": 2026,
+            "quarter": 4,
+            "finnhub": {
+              "symbol": "PFE",
+              "date": "2027-02-01",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 0.7197,
+              "epsActual": null,
+              "revenueEstimate": 17009616979,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "PFE",
+              "date": "2027-02-01",
+              "hour": "bmo",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": -0.59,
+              "epsActual": null,
+              "revenueEstimate": 18256342477,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": -1.3097
+          },
+          {
+            "year": 2026,
+            "quarter": 3,
+            "finnhub": {
+              "symbol": "PFE",
+              "date": "2026-11-03",
+              "hour": "",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 0.7376,
+              "epsActual": null,
+              "revenueEstimate": 16072017768,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "PFE",
+              "date": "2026-11-03",
+              "hour": "bmo",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 0.32,
+              "epsActual": null,
+              "revenueEstimate": 17317373561,
+              "revenueActual": null,
+              "dateStatus": "confirmed",
+              "dateSource": "ir-calendar:q4",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": -0.4176
+          }
+        ]
+      },
+      "news": {
+        "finnhub_items": 246,
+        "finnhub_kept_by_loom": 20,
+        "yarn_items": 191,
+        "yarn_kept_by_loom": 10,
+        "headline_recall": 0.0,
+        "median_yarn_lead_seconds": null
+      },
+      "recommendations": {
+        "periods": [
+          {
+            "period": "2026-09-01",
+            "finnhub": [
+              6,
+              8,
+              20,
+              1,
+              1
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-08-01",
+            "finnhub": [
+              6,
+              8,
+              20,
+              1,
+              1
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-07-01",
+            "finnhub": [
+              6,
+              9,
+              19,
+              1,
+              1
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-06-01",
+            "finnhub": [
+              6,
+              9,
+              18,
+              2,
+              1
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          }
+        ]
+      }
+    },
+    "UNH": {
+      "earnings": {
+        "checks": {
+          "date": {
+            "matched": 2,
+            "of": 2
+          },
+          "hour": {
+            "matched": 1,
+            "of": 2
+          },
+          "eps_actual": {
+            "matched": 1,
+            "of": 1
+          },
+          "revenue_actual": {
+            "matched": 1,
+            "of": 1
+          }
+        },
+        "rows": [
+          {
+            "year": 2026,
+            "quarter": 4,
+            "finnhub": {
+              "symbol": "UNH",
+              "date": "2027-01-25",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 2.2753,
+              "epsActual": null,
+              "revenueEstimate": 113262248400,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "UNH",
+              "date": "2027-01-25",
+              "hour": "bmo",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 1.195,
+              "epsActual": null,
+              "revenueEstimate": 114534624049,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": -1.0803
+          },
+          {
+            "year": 2026,
+            "quarter": 3,
+            "finnhub": {
+              "symbol": "UNH",
+              "date": "2026-10-13",
+              "hour": "bmo",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 4.1809,
+              "epsActual": 4.69,
+              "revenueEstimate": 112517286035,
+              "revenueActual": 112694000000
+            },
+            "yarn": {
+              "symbol": "UNH",
+              "date": "2026-10-13",
+              "hour": "bmo",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 3.765,
+              "epsActual": 4.69,
+              "revenueEstimate": 114479994630,
+              "revenueActual": 112694000000,
+              "dateStatus": "reported",
+              "dateSource": "8-k",
+              "estimateBasis": "model",
+              "epsBasis": "adjusted",
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": -0.4159
+          }
+        ]
+      },
+      "news": {
+        "finnhub_items": 241,
+        "finnhub_kept_by_loom": 30,
+        "yarn_items": 128,
+        "yarn_kept_by_loom": 20,
+        "headline_recall": 0.0,
+        "median_yarn_lead_seconds": null
+      },
+      "recommendations": {
+        "periods": [
+          {
+            "period": "2026-09-01",
+            "finnhub": [
+              8,
+              19,
+              7,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-08-01",
+            "finnhub": [
+              8,
+              19,
+              7,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-07-01",
+            "finnhub": [
+              8,
+              19,
+              6,
+              0,
+              1
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-06-01",
+            "finnhub": [
+              7,
+              19,
+              7,
+              0,
+              1
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          }
+        ]
+      }
+    },
+    "WMT": {
+      "earnings": {
+        "checks": {
+          "date": {
+            "matched": 1,
+            "of": 1
+          },
+          "hour": {
+            "matched": 0,
+            "of": 0
+          },
+          "eps_actual": {
+            "matched": 0,
+            "of": 0
+          },
+          "revenue_actual": {
+            "matched": 0,
+            "of": 0
+          }
+        },
+        "rows": [
+          {
+            "year": 2027,
+            "quarter": 3,
+            "finnhub": {
+              "symbol": "WMT",
+              "date": "2026-11-19",
+              "hour": "",
+              "quarter": 3,
+              "year": 2027,
+              "epsEstimate": 0.6421,
+              "epsActual": null,
+              "revenueEstimate": 189179162040,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "WMT",
+              "date": "2026-11-19",
+              "hour": "bmo",
+              "quarter": 3,
+              "year": 2027,
+              "epsEstimate": 0.785,
+              "epsActual": null,
+              "revenueEstimate": 189346961088,
+              "revenueActual": null,
+              "dateStatus": "confirmed",
+              "dateSource": "ir-calendar:page",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": 0.1429
+          }
+        ]
+      },
+      "news": {
+        "finnhub_items": 244,
+        "finnhub_kept_by_loom": 18,
+        "yarn_items": 197,
+        "yarn_kept_by_loom": 6,
+        "headline_recall": 0.056,
+        "median_yarn_lead_seconds": -7350
+      },
+      "recommendations": {
+        "periods": [
+          {
+            "period": "2026-09-01",
+            "finnhub": [
+              12,
+              30,
+              6,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-08-01",
+            "finnhub": [
+              14,
+              29,
+              5,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-07-01",
+            "finnhub": [
+              14,
+              29,
+              5,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-06-01",
+            "finnhub": [
+              14,
+              29,
+              5,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          }
+        ]
+      }
+    },
+    "KO": {
+      "earnings": {
+        "checks": {
+          "date": {
+            "matched": 2,
+            "of": 2
+          },
+          "hour": {
+            "matched": 1,
+            "of": 2
+          },
+          "eps_actual": {
+            "matched": 0,
+            "of": 0
+          },
+          "revenue_actual": {
+            "matched": 0,
+            "of": 0
+          }
+        },
+        "rows": [
+          {
+            "year": 2026,
+            "quarter": 4,
+            "finnhub": {
+              "symbol": "KO",
+              "date": "2027-02-08",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 0.6129,
+              "epsActual": null,
+              "revenueEstimate": 11422013649,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "KO",
+              "date": "2027-02-08",
+              "hour": "bmo",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 0.61,
+              "epsActual": null,
+              "revenueEstimate": 12677661500,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": -0.0029
+          },
+          {
+            "year": 2026,
+            "quarter": 3,
+            "finnhub": {
+              "symbol": "KO",
+              "date": "2026-10-27",
+              "hour": "bmo",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 0.9065,
+              "epsActual": null,
+              "revenueEstimate": 13304743470,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "KO",
+              "date": "2026-10-27",
+              "hour": "bmo",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 0.94,
+              "epsActual": null,
+              "revenueEstimate": 13356477245,
+              "revenueActual": null,
+              "dateStatus": "confirmed",
+              "dateSource": "ir-calendar:page",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": 0.0335
+          }
+        ]
+      },
+      "news": {
+        "finnhub_items": 241,
+        "finnhub_kept_by_loom": 23,
+        "yarn_items": 177,
+        "yarn_kept_by_loom": 12,
+        "headline_recall": 0.043,
+        "median_yarn_lead_seconds": -10684
+      },
+      "recommendations": {
+        "periods": [
+          {
+            "period": "2026-09-01",
+            "finnhub": [
+              8,
+              19,
+              8,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-08-01",
+            "finnhub": [
+              8,
+              19,
+              8,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-07-01",
+            "finnhub": [
+              9,
+              20,
+              6,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-06-01",
+            "finnhub": [
+              8,
+              20,
+              6,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          }
+        ]
+      }
+    },
+    "PEP": {
+      "earnings": {
+        "checks": {
+          "date": {
+            "matched": 2,
+            "of": 2
+          },
+          "hour": {
+            "matched": 1,
+            "of": 2
+          },
+          "eps_actual": {
+            "matched": 1,
+            "of": 1
+          },
+          "revenue_actual": {
+            "matched": 1,
+            "of": 1
+          }
+        },
+        "rows": [
+          {
+            "year": 2026,
+            "quarter": 4,
+            "finnhub": {
+              "symbol": "PEP",
+              "date": "2027-02-01",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 2.2641,
+              "epsActual": null,
+              "revenueEstimate": 30722730248,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "PEP",
+              "date": "2027-02-01",
+              "hour": "bmo",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": null,
+              "epsActual": null,
+              "revenueEstimate": null,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": null,
+              "epsBasis": null,
+              "epsActualGaap": null
+            }
+          },
+          {
+            "year": 2026,
+            "quarter": 3,
+            "finnhub": {
+              "symbol": "PEP",
+              "date": "2026-10-08",
+              "hour": "bmo",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 2.3177,
+              "epsActual": 2.34,
+              "revenueEstimate": 25206790654,
+              "revenueActual": 25274000000
+            },
+            "yarn": {
+              "symbol": "PEP",
+              "date": "2026-10-08",
+              "hour": "bmo",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 2.715,
+              "epsActual": 2.34,
+              "revenueEstimate": 25721179892,
+              "revenueActual": 25274000000,
+              "dateStatus": "reported",
+              "dateSource": "8-k",
+              "estimateBasis": "model",
+              "epsBasis": "adjusted",
+              "epsActualGaap": 2.23
+            },
+            "eps_estimate_delta": 0.3973
+          }
+        ]
+      },
+      "news": {
+        "finnhub_items": 247,
+        "finnhub_kept_by_loom": 108,
+        "yarn_items": 172,
+        "yarn_kept_by_loom": 56,
+        "headline_recall": 0.009,
+        "median_yarn_lead_seconds": -10118
+      },
+      "recommendations": {
+        "periods": [
+          {
+            "period": "2026-09-01",
+            "finnhub": [
+              2,
+              10,
+              17,
+              1,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-08-01",
+            "finnhub": [
+              2,
+              10,
+              17,
+              1,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-07-01",
+            "finnhub": [
+              3,
+              10,
+              16,
+              1,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-06-01",
+            "finnhub": [
+              3,
+              10,
+              15,
+              1,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          }
+        ]
+      }
+    },
+    "DIS": {
+      "earnings": {
+        "checks": {
+          "date": {
+            "matched": 2,
+            "of": 2
+          },
+          "hour": {
+            "matched": 0,
+            "of": 1
+          },
+          "eps_actual": {
+            "matched": 0,
+            "of": 0
+          },
+          "revenue_actual": {
+            "matched": 0,
+            "of": 0
+          }
+        },
+        "rows": [
+          {
+            "year": 2027,
+            "quarter": 1,
+            "finnhub": {
+              "symbol": "DIS",
+              "date": "2027-02-01",
+              "hour": "",
+              "quarter": 1,
+              "year": 2027,
+              "epsEstimate": 1.9831,
+              "epsActual": null,
+              "revenueEstimate": 27970514537,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "DIS",
+              "date": "2027-02-01",
+              "hour": "bmo",
+              "quarter": 1,
+              "year": 2027,
+              "epsEstimate": 0.365,
+              "epsActual": null,
+              "revenueEstimate": 27709532564,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": -1.6181
+          },
+          {
+            "year": 2026,
+            "quarter": 4,
+            "finnhub": {
+              "symbol": "DIS",
+              "date": "2026-11-17",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 1.6929,
+              "epsActual": null,
+              "revenueEstimate": 25438218681,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "DIS",
+              "date": "2026-11-17",
+              "hour": "bmo",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": -0.245,
+              "epsActual": null,
+              "revenueEstimate": 23958544302,
+              "revenueActual": null,
+              "dateStatus": "confirmed",
+              "dateSource": "ir-calendar:q4",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": -1.9379
+          }
+        ]
+      },
+      "news": {
+        "finnhub_items": 239,
+        "finnhub_kept_by_loom": 100,
+        "yarn_items": 146,
+        "yarn_kept_by_loom": 57,
+        "headline_recall": 0.01,
+        "median_yarn_lead_seconds": -2597
+      },
+      "recommendations": {
+        "periods": [
+          {
+            "period": "2026-09-01",
+            "finnhub": [
+              11,
+              23,
+              3,
+              1,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-08-01",
+            "finnhub": [
+              11,
+              22,
+              3,
+              1,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-07-01",
+            "finnhub": [
+              11,
+              21,
+              3,
+              1,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-06-01",
+            "finnhub": [
+              11,
+              21,
+              3,
+              1,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          }
+        ]
+      }
+    },
+    "NFLX": {
+      "earnings": {
+        "checks": {
+          "date": {
+            "matched": 2,
+            "of": 2
+          },
+          "hour": {
+            "matched": 2,
+            "of": 2
+          },
+          "eps_actual": {
+            "matched": 0,
+            "of": 0
+          },
+          "revenue_actual": {
+            "matched": 0,
+            "of": 0
+          }
+        },
+        "rows": [
+          {
+            "year": 2026,
+            "quarter": 4,
+            "finnhub": {
+              "symbol": "NFLX",
+              "date": "2027-01-18",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 0.7459,
+              "epsActual": null,
+              "revenueEstimate": 13790616790,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "NFLX",
+              "date": "2027-01-18",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": -23.025,
+              "epsActual": null,
+              "revenueEstimate": 13831629636,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": -23.7709
+          },
+          {
+            "year": 2026,
+            "quarter": 3,
+            "finnhub": {
+              "symbol": "NFLX",
+              "date": "2026-10-20",
+              "hour": "amc",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 0.8391,
+              "epsActual": null,
+              "revenueEstimate": 13136855206,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "NFLX",
+              "date": "2026-10-20",
+              "hour": "amc",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": -0.015,
+              "epsActual": null,
+              "revenueEstimate": 13211305925,
+              "revenueActual": null,
+              "dateStatus": "confirmed",
+              "dateSource": "ir-calendar:q4",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": -0.8541
+          }
+        ]
+      },
+      "news": {
+        "finnhub_items": 248,
+        "finnhub_kept_by_loom": 24,
+        "yarn_items": 175,
+        "yarn_kept_by_loom": 3,
+        "headline_recall": 0.0,
+        "median_yarn_lead_seconds": null
+      },
+      "recommendations": {
+        "periods": [
+          {
+            "period": "2026-09-01",
+            "finnhub": [
+              14,
+              29,
+              15,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-08-01",
+            "finnhub": [
+              14,
+              30,
+              14,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-07-01",
+            "finnhub": [
+              16,
+              29,
+              13,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-06-01",
+            "finnhub": [
+              16,
+              29,
+              13,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          }
+        ]
+      }
+    },
+    "INTC": {
+      "earnings": {
+        "checks": {
+          "date": {
+            "matched": 2,
+            "of": 2
+          },
+          "hour": {
+            "matched": 2,
+            "of": 2
+          },
+          "eps_actual": {
+            "matched": 0,
+            "of": 0
+          },
+          "revenue_actual": {
+            "matched": 0,
+            "of": 0
+          }
+        },
+        "rows": [
+          {
+            "year": 2026,
+            "quarter": 4,
+            "finnhub": {
+              "symbol": "INTC",
+              "date": "2027-01-20",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 0.4369,
+              "epsActual": null,
+              "revenueEstimate": 17363745232,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "INTC",
+              "date": "2027-01-20",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": -1.145,
+              "epsActual": null,
+              "revenueEstimate": 15903265723,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": -1.5819
+          },
+          {
+            "year": 2026,
+            "quarter": 3,
+            "finnhub": {
+              "symbol": "INTC",
+              "date": "2026-10-29",
+              "hour": "amc",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 0.398,
+              "epsActual": null,
+              "revenueEstimate": 16770412681,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "INTC",
+              "date": "2026-10-29",
+              "hour": "amc",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": -0.115,
+              "epsActual": null,
+              "revenueEstimate": 15878842103,
+              "revenueActual": null,
+              "dateStatus": "confirmed",
+              "dateSource": "ir-calendar:page",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": -0.513
+          }
+        ]
+      },
+      "news": {
+        "finnhub_items": 242,
+        "finnhub_kept_by_loom": 14,
+        "yarn_items": 164,
+        "yarn_kept_by_loom": 1,
+        "headline_recall": 0.0,
+        "median_yarn_lead_seconds": null
+      },
+      "recommendations": {
+        "periods": [
+          {
+            "period": "2026-09-01",
+            "finnhub": [
+              4,
+              15,
+              34,
+              2,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-08-01",
+            "finnhub": [
+              4,
+              15,
+              33,
+              3,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-07-01",
+            "finnhub": [
+              5,
+              13,
+              34,
+              3,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-06-01",
+            "finnhub": [
+              4,
+              13,
+              32,
+              4,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          }
+        ]
+      }
+    },
+    "AMD": {
+      "earnings": {
+        "checks": {
+          "date": {
+            "matched": 2,
+            "of": 2
+          },
+          "hour": {
+            "matched": 2,
+            "of": 2
+          },
+          "eps_actual": {
+            "matched": 0,
+            "of": 0
+          },
+          "revenue_actual": {
+            "matched": 0,
+            "of": 0
+          }
+        },
+        "rows": [
+          {
+            "year": 2026,
+            "quarter": 4,
+            "finnhub": {
+              "symbol": "AMD",
+              "date": "2027-02-01",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 2.6721,
+              "epsActual": null,
+              "revenueEstimate": 16348394835,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "AMD",
+              "date": "2027-02-01",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 1.54,
+              "epsActual": null,
+              "revenueEstimate": 14786581694,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": -1.1321
+          },
+          {
+            "year": 2026,
+            "quarter": 3,
+            "finnhub": {
+              "symbol": "AMD",
+              "date": "2026-11-03",
+              "hour": "amc",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 1.9652,
+              "epsActual": null,
+              "revenueEstimate": 13209547408,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "AMD",
+              "date": "2026-11-03",
+              "hour": "amc",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 1.37,
+              "epsActual": null,
+              "revenueEstimate": 13312242877,
+              "revenueActual": null,
+              "dateStatus": "confirmed",
+              "dateSource": "ir-calendar:page",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": -0.5952
+          }
+        ]
+      },
+      "news": {
+        "finnhub_items": 250,
+        "finnhub_kept_by_loom": 62,
+        "yarn_items": 185,
+        "yarn_kept_by_loom": 2,
+        "headline_recall": 0.0,
+        "median_yarn_lead_seconds": null
+      },
+      "recommendations": {
+        "periods": [
+          {
+            "period": "2026-09-01",
+            "finnhub": [
+              17,
+              32,
+              10,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-08-01",
+            "finnhub": [
+              16,
+              32,
+              10,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-07-01",
+            "finnhub": [
+              15,
+              33,
+              9,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-06-01",
+            "finnhub": [
+              14,
+              32,
+              11,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          }
+        ]
+      }
+    },
+    "CRM": {
+      "earnings": {
+        "checks": {
+          "date": {
+            "matched": 1,
+            "of": 1
+          },
+          "hour": {
+            "matched": 1,
+            "of": 1
+          },
+          "eps_actual": {
+            "matched": 0,
+            "of": 0
+          },
+          "revenue_actual": {
+            "matched": 0,
+            "of": 0
+          }
+        },
+        "rows": [
+          {
+            "year": 2027,
+            "quarter": 3,
+            "finnhub": {
+              "symbol": "CRM",
+              "date": "2026-12-01",
+              "hour": "amc",
+              "quarter": 3,
+              "year": 2027,
+              "epsEstimate": 3.4698,
+              "epsActual": null,
+              "revenueEstimate": 11571175352,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "CRM",
+              "date": "2026-12-01",
+              "hour": "amc",
+              "quarter": 3,
+              "year": 2027,
+              "epsEstimate": 3.77,
+              "epsActual": null,
+              "revenueEstimate": 11495269701,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": 0.3002
+          }
+        ]
+      },
+      "news": {
+        "finnhub_items": 241,
+        "finnhub_kept_by_loom": 25,
+        "yarn_items": 217,
+        "yarn_kept_by_loom": 11,
+        "headline_recall": 0.0,
+        "median_yarn_lead_seconds": null
+      },
+      "recommendations": {
+        "periods": [
+          {
+            "period": "2026-09-01",
+            "finnhub": [
+              14,
+              30,
+              13,
+              1,
+              1
+            ],
+            "yarn": [
+              0,
+              2,
+              0,
+              0,
+              0
+            ],
+            "yarn_firms": 2
+          },
+          {
+            "period": "2026-08-01",
+            "finnhub": [
+              14,
+              29,
+              13,
+              1,
+              1
+            ],
+            "yarn": [
+              0,
+              2,
+              0,
+              0,
+              0
+            ],
+            "yarn_firms": 2
+          },
+          {
+            "period": "2026-07-01",
+            "finnhub": [
+              13,
+              31,
+              12,
+              1,
+              1
+            ],
+            "yarn": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-06-01",
+            "finnhub": [
+              12,
+              31,
+              13,
+              1,
+              1
+            ],
+            "yarn": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "yarn_firms": 0
+          }
+        ]
+      }
+    },
+    "ORCL": {
+      "earnings": {
+        "checks": {
+          "date": {
+            "matched": 1,
+            "of": 1
+          },
+          "hour": {
+            "matched": 0,
+            "of": 0
+          },
+          "eps_actual": {
+            "matched": 0,
+            "of": 0
+          },
+          "revenue_actual": {
+            "matched": 0,
+            "of": 0
+          }
+        },
+        "rows": [
+          {
+            "year": 2027,
+            "quarter": 2,
+            "finnhub": {
+              "symbol": "ORCL",
+              "date": "2026-12-08",
+              "hour": "",
+              "quarter": 2,
+              "year": 2027,
+              "epsEstimate": 1.9304,
+              "epsActual": null,
+              "revenueEstimate": 21758689398,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "ORCL",
+              "date": "2026-12-08",
+              "hour": "amc",
+              "quarter": 2,
+              "year": 2027,
+              "epsEstimate": 2.355,
+              "epsActual": null,
+              "revenueEstimate": 19453253609,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": 0.4246
+          }
+        ]
+      },
+      "news": {
+        "finnhub_items": 246,
+        "finnhub_kept_by_loom": 13,
+        "yarn_items": 1,
+        "yarn_kept_by_loom": 0,
+        "headline_recall": 0.0,
+        "median_yarn_lead_seconds": null
+      },
+      "recommendations": {
+        "periods": [
+          {
+            "period": "2026-09-01",
+            "finnhub": [
+              15,
+              24,
+              9,
+              1,
+              0
+            ],
+            "yarn": [
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "yarn_firms": 1
+          },
+          {
+            "period": "2026-08-01",
+            "finnhub": [
+              15,
+              25,
+              8,
+              1,
+              0
+            ],
+            "yarn": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-07-01",
+            "finnhub": [
+              15,
+              25,
+              8,
+              1,
+              0
+            ],
+            "yarn": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-06-01",
+            "finnhub": [
+              17,
+              23,
+              8,
+              1,
+              0
+            ],
+            "yarn": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "yarn_firms": 0
+          }
+        ]
+      }
+    },
+    "BA": {
+      "earnings": {
+        "checks": {
+          "date": {
+            "matched": 2,
+            "of": 2
+          },
+          "hour": {
+            "matched": 1,
+            "of": 2
+          },
+          "eps_actual": {
+            "matched": 0,
+            "of": 0
+          },
+          "revenue_actual": {
+            "matched": 0,
+            "of": 0
+          }
+        },
+        "rows": [
+          {
+            "year": 2026,
+            "quarter": 4,
+            "finnhub": {
+              "symbol": "BA",
+              "date": "2027-01-25",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 0.035,
+              "epsActual": null,
+              "revenueEstimate": 27226944717,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "BA",
+              "date": "2027-01-25",
+              "hour": "bmo",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 10.88,
+              "epsActual": null,
+              "revenueEstimate": 26572401276,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": 10.845
+          },
+          {
+            "year": 2026,
+            "quarter": 3,
+            "finnhub": {
+              "symbol": "BA",
+              "date": "2026-10-27",
+              "hour": "bmo",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": -0.1981,
+              "epsActual": null,
+              "revenueEstimate": 25131309065,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "BA",
+              "date": "2026-10-27",
+              "hour": "bmo",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": -6.99,
+              "epsActual": null,
+              "revenueEstimate": 25820100956,
+              "revenueActual": null,
+              "dateStatus": "confirmed",
+              "dateSource": "ir-calendar:q4",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": -6.7919
+          }
+        ]
+      },
+      "news": {
+        "finnhub_items": 241,
+        "finnhub_kept_by_loom": 35,
+        "yarn_items": 190,
+        "yarn_kept_by_loom": 25,
+        "headline_recall": 0.029,
+        "median_yarn_lead_seconds": -7550
+      },
+      "recommendations": {
+        "periods": [
+          {
+            "period": "2026-09-01",
+            "finnhub": [
+              14,
+              18,
+              5,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-08-01",
+            "finnhub": [
+              13,
+              18,
+              6,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-07-01",
+            "finnhub": [
+              13,
+              18,
+              6,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-06-01",
+            "finnhub": [
+              13,
+              18,
+              6,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          }
+        ]
+      }
+    },
+    "CAT": {
+      "earnings": {
+        "checks": {
+          "date": {
+            "matched": 2,
+            "of": 2
+          },
+          "hour": {
+            "matched": 2,
+            "of": 2
+          },
+          "eps_actual": {
+            "matched": 0,
+            "of": 0
+          },
+          "revenue_actual": {
+            "matched": 0,
+            "of": 0
+          }
+        },
+        "rows": [
+          {
+            "year": 2026,
+            "quarter": 4,
+            "finnhub": {
+              "symbol": "CAT",
+              "date": "2027-01-27",
+              "hour": "bmo",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 7.0962,
+              "epsActual": null,
+              "revenueEstimate": 21646465288,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "CAT",
+              "date": "2027-01-27",
+              "hour": "bmo",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 7.33,
+              "epsActual": null,
+              "revenueEstimate": 23553072421,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": 0.2338
+          },
+          {
+            "year": 2026,
+            "quarter": 3,
+            "finnhub": {
+              "symbol": "CAT",
+              "date": "2026-10-29",
+              "hour": "bmo",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 7.1459,
+              "epsActual": null,
+              "revenueEstimate": 20964040143,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "CAT",
+              "date": "2026-10-29",
+              "hour": "bmo",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 7.09,
+              "epsActual": null,
+              "revenueEstimate": 21712700118,
+              "revenueActual": null,
+              "dateStatus": "confirmed",
+              "dateSource": "ir-calendar:q4",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": -0.0559
+          }
+        ]
+      },
+      "news": {
+        "finnhub_items": 234,
+        "finnhub_kept_by_loom": 81,
+        "yarn_items": 167,
+        "yarn_kept_by_loom": 43,
+        "headline_recall": 0.012,
+        "median_yarn_lead_seconds": -2082
+      },
+      "recommendations": {
+        "periods": [
+          {
+            "period": "2026-09-01",
+            "finnhub": [
+              7,
+              11,
+              15,
+              1,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-08-01",
+            "finnhub": [
+              7,
+              11,
+              15,
+              1,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-07-01",
+            "finnhub": [
+              8,
+              11,
+              14,
+              1,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-06-01",
+            "finnhub": [
+              8,
+              11,
+              14,
+              1,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          }
+        ]
+      }
+    },
+    "GE": {
+      "earnings": {
+        "checks": {
+          "date": {
+            "matched": 2,
+            "of": 2
+          },
+          "hour": {
+            "matched": 1,
+            "of": 2
+          },
+          "eps_actual": {
+            "matched": 0,
+            "of": 0
+          },
+          "revenue_actual": {
+            "matched": 0,
+            "of": 0
+          }
+        },
+        "rows": [
+          {
+            "year": 2026,
+            "quarter": 4,
+            "finnhub": {
+              "symbol": "GE",
+              "date": "2027-01-20",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 2.1023,
+              "epsActual": null,
+              "revenueEstimate": 13656362047,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "GE",
+              "date": "2027-01-20",
+              "hour": "bmo",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 2.565,
+              "epsActual": null,
+              "revenueEstimate": 15631233026,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": 0.4627
+          },
+          {
+            "year": 2026,
+            "quarter": 3,
+            "finnhub": {
+              "symbol": "GE",
+              "date": "2026-10-19",
+              "hour": "bmo",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 2.0576,
+              "epsActual": null,
+              "revenueEstimate": 13222814375,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "GE",
+              "date": "2026-10-19",
+              "hour": "bmo",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 2.195,
+              "epsActual": null,
+              "revenueEstimate": 14972403042,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": 0.1374
+          }
+        ]
+      },
+      "news": {
+        "finnhub_items": 247,
+        "finnhub_kept_by_loom": 128,
+        "yarn_items": 103,
+        "yarn_kept_by_loom": 31,
+        "headline_recall": 0.0,
+        "median_yarn_lead_seconds": null
+      },
+      "recommendations": {
+        "periods": [
+          {
+            "period": "2026-09-01",
+            "finnhub": [
+              9,
+              19,
+              3,
+              1,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-08-01",
+            "finnhub": [
+              9,
+              19,
+              3,
+              1,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-07-01",
+            "finnhub": [
+              9,
+              19,
+              3,
+              1,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-06-01",
+            "finnhub": [
+              9,
+              19,
+              3,
+              1,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          }
+        ]
+      }
+    },
+    "F": {
+      "earnings": {
+        "checks": {
+          "date": {
+            "matched": 2,
+            "of": 2
+          },
+          "hour": {
+            "matched": 2,
+            "of": 2
+          },
+          "eps_actual": {
+            "matched": 0,
+            "of": 0
+          },
+          "revenue_actual": {
+            "matched": 0,
+            "of": 0
+          }
+        },
+        "rows": [
+          {
+            "year": 2026,
+            "quarter": 4,
+            "finnhub": {
+              "symbol": "F",
+              "date": "2027-02-08",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 0.3976,
+              "epsActual": null,
+              "revenueEstimate": 47078985696,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "F",
+              "date": "2027-02-08",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": -4.14,
+              "epsActual": null,
+              "revenueEstimate": 46249235474,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": -4.5376
+          },
+          {
+            "year": 2026,
+            "quarter": 3,
+            "finnhub": {
+              "symbol": "F",
+              "date": "2026-10-28",
+              "hour": "amc",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 0.418,
+              "epsActual": null,
+              "revenueEstimate": 47464719096,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "F",
+              "date": "2026-10-28",
+              "hour": "amc",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": -0.76,
+              "epsActual": null,
+              "revenueEstimate": 50929589572,
+              "revenueActual": null,
+              "dateStatus": "confirmed",
+              "dateSource": "ir-calendar:q4",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": -1.178
+          }
+        ]
+      },
+      "news": {
+        "finnhub_items": 237,
+        "finnhub_kept_by_loom": 146,
+        "yarn_items": 100,
+        "yarn_kept_by_loom": 71,
+        "headline_recall": 0.021,
+        "median_yarn_lead_seconds": -4491
+      },
+      "recommendations": {
+        "periods": [
+          {
+            "period": "2026-09-01",
+            "finnhub": [
+              6,
+              6,
+              16,
+              1,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-08-01",
+            "finnhub": [
+              6,
+              6,
+              16,
+              2,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-07-01",
+            "finnhub": [
+              4,
+              6,
+              18,
+              1,
+              1
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-06-01",
+            "finnhub": [
+              4,
+              6,
+              18,
+              1,
+              1
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          }
+        ]
+      }
+    },
+    "VZ": {
+      "earnings": {
+        "checks": {
+          "date": {
+            "matched": 1,
+            "of": 2
+          },
+          "hour": {
+            "matched": 0,
+            "of": 1
+          },
+          "eps_actual": {
+            "matched": 0,
+            "of": 0
+          },
+          "revenue_actual": {
+            "matched": 0,
+            "of": 0
+          }
+        },
+        "rows": [
+          {
+            "year": 2026,
+            "quarter": 4,
+            "finnhub": {
+              "symbol": "VZ",
+              "date": "2027-01-28",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 1.1953,
+              "epsActual": null,
+              "revenueEstimate": 38372459027,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "VZ",
+              "date": "2027-01-28",
+              "hour": "bmo",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 0.445,
+              "epsActual": null,
+              "revenueEstimate": 36767470161,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": -0.7503
+          },
+          {
+            "year": 2026,
+            "quarter": 3,
+            "finnhub": {
+              "symbol": "VZ",
+              "date": "2026-10-26",
+              "hour": "",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 1.3111,
+              "epsActual": null,
+              "revenueEstimate": 35786346491,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "VZ",
+              "date": "2026-10-27",
+              "hour": "bmo",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 1.065,
+              "epsActual": null,
+              "revenueEstimate": 34180275647,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": -0.2461
+          }
+        ]
+      },
+      "news": {
+        "finnhub_items": 245,
+        "finnhub_kept_by_loom": 11,
+        "yarn_items": 179,
+        "yarn_kept_by_loom": 14,
+        "headline_recall": 0.091,
+        "median_yarn_lead_seconds": -10264
+      },
+      "recommendations": {
+        "periods": [
+          {
+            "period": "2026-09-01",
+            "finnhub": [
+              7,
+              11,
+              18,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-08-01",
+            "finnhub": [
+              7,
+              11,
+              18,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-07-01",
+            "finnhub": [
+              7,
+              11,
+              18,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-06-01",
+            "finnhub": [
+              7,
+              11,
+              17,
+              0,
+              0
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          }
+        ]
+      }
+    },
+    "PLTR": {
+      "earnings": {
+        "checks": {
+          "date": {
+            "matched": 2,
+            "of": 2
+          },
+          "hour": {
+            "matched": 1,
+            "of": 1
+          },
+          "eps_actual": {
+            "matched": 0,
+            "of": 0
+          },
+          "revenue_actual": {
+            "matched": 0,
+            "of": 0
+          }
+        },
+        "rows": [
+          {
+            "year": 2026,
+            "quarter": 4,
+            "finnhub": {
+              "symbol": "PLTR",
+              "date": "2027-02-01",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 0.4764,
+              "epsActual": null,
+              "revenueEstimate": 2506254994,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "PLTR",
+              "date": "2027-02-01",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 0.5,
+              "epsActual": null,
+              "revenueEstimate": 2655656199,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": 0.0236
+          },
+          {
+            "year": 2026,
+            "quarter": 3,
+            "finnhub": {
+              "symbol": "PLTR",
+              "date": "2026-11-02",
+              "hour": "",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 0.4233,
+              "epsActual": null,
+              "revenueEstimate": 2223614239,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "PLTR",
+              "date": "2026-11-02",
+              "hour": "amc",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 0.45,
+              "epsActual": null,
+              "revenueEstimate": 2229577646,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": 0.0267
+          }
+        ]
+      },
+      "news": {
+        "finnhub_items": 246,
+        "finnhub_kept_by_loom": 13,
+        "yarn_items": 220,
+        "yarn_kept_by_loom": 16,
+        "headline_recall": 0.0,
+        "median_yarn_lead_seconds": null
+      },
+      "recommendations": {
+        "periods": [
+          {
+            "period": "2026-09-01",
+            "finnhub": [
+              12,
+              16,
+              9,
+              1,
+              1
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-08-01",
+            "finnhub": [
+              12,
+              15,
+              10,
+              1,
+              1
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-07-01",
+            "finnhub": [
+              12,
+              14,
+              11,
+              1,
+              1
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-06-01",
+            "finnhub": [
+              12,
+              14,
+              10,
+              1,
+              1
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          }
+        ]
+      }
+    },
+    "SOFI": {
+      "earnings": {
+        "checks": {
+          "date": {
+            "matched": 2,
+            "of": 2
+          },
+          "hour": {
+            "matched": 1,
+            "of": 2
+          },
+          "eps_actual": {
+            "matched": 0,
+            "of": 0
+          },
+          "revenue_actual": {
+            "matched": 0,
+            "of": 0
+          }
+        },
+        "rows": [
+          {
+            "year": 2026,
+            "quarter": 4,
+            "finnhub": {
+              "symbol": "SOFI",
+              "date": "2027-01-28",
+              "hour": "amc",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 0.1939,
+              "epsActual": null,
+              "revenueEstimate": 1342372346,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "SOFI",
+              "date": "2027-01-28",
+              "hour": "bmo",
+              "quarter": 4,
+              "year": 2026,
+              "epsEstimate": 0.19,
+              "epsActual": null,
+              "revenueEstimate": 164637917,
+              "revenueActual": null,
+              "dateStatus": "projected",
+              "dateSource": "projection",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": -0.0039
+          },
+          {
+            "year": 2026,
+            "quarter": 3,
+            "finnhub": {
+              "symbol": "SOFI",
+              "date": "2026-10-27",
+              "hour": "bmo",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 0.1696,
+              "epsActual": null,
+              "revenueEstimate": 1282632558,
+              "revenueActual": null
+            },
+            "yarn": {
+              "symbol": "SOFI",
+              "date": "2026-10-27",
+              "hour": "bmo",
+              "quarter": 3,
+              "year": 2026,
+              "epsEstimate": 0.16,
+              "epsActual": null,
+              "revenueEstimate": 151586962,
+              "revenueActual": null,
+              "dateStatus": "confirmed",
+              "dateSource": "ir-calendar:q4",
+              "estimateBasis": "model",
+              "epsBasis": null,
+              "epsActualGaap": null
+            },
+            "eps_estimate_delta": -0.0096
+          }
+        ]
+      },
+      "news": {
+        "finnhub_items": 242,
+        "finnhub_kept_by_loom": 119,
+        "yarn_items": 0,
+        "yarn_kept_by_loom": 0,
+        "headline_recall": 0.0,
+        "median_yarn_lead_seconds": null
+      },
+      "recommendations": {
+        "periods": [
+          {
+            "period": "2026-09-01",
+            "finnhub": [
+              6,
+              8,
+              13,
+              3,
+              1
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-08-01",
+            "finnhub": [
+              6,
+              7,
+              13,
+              3,
+              1
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-07-01",
+            "finnhub": [
+              6,
+              8,
+              13,
+              3,
+              1
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          },
+          {
+            "period": "2026-06-01",
+            "finnhub": [
+              6,
+              8,
+              13,
+              3,
+              1
+            ],
+            "yarn": null,
+            "yarn_firms": 0
+          }
+        ]
+      }
+    }
+  },
+  "totals": {
+    "date": {
+      "matched": 48,
+      "of": 56,
+      "rate": 0.857
+    },
+    "hour": {
+      "matched": 33,
+      "of": 45,
+      "rate": 0.733
+    },
+    "eps_actual": {
+      "matched": 5,
+      "of": 5,
+      "rate": 1.0
+    },
+    "revenue_actual": {
+      "matched": 4,
+      "of": 5,
+      "rate": 0.8
+    }
+  },
+  "upcoming_dates_by_source": {
+    "ir-calendar:page": {
+      "matched": 4,
+      "of": 5,
+      "rate": 0.8
+    },
+    "ir-calendar:q4": {
+      "matched": 11,
+      "of": 11,
+      "rate": 1.0
+    },
+    "projection": {
+      "matched": 28,
+      "of": 35,
+      "rate": 0.8
+    }
+  },
+  "upcoming_dates": {
+    "matched": 43,
+    "of": 51,
+    "rate": 0.843
+  }
+}

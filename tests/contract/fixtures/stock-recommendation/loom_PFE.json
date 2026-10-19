@@ -1,0 +1,71 @@
+{
+  "case": "loom_PFE",
+  "endpoint": "/stock/recommendation",
+  "params": {
+    "symbol": "PFE",
+    "token": "REDACTED"
+  },
+  "token_location": "query",
+  "captured_at": "2026-10-19T08:50:19.289294+00:00",
+  "elapsed_ms": 131.2,
+  "status": 200,
+  "headers": {
+    "date": "Mon, 19 Oct 2026 08:50:19 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "transfer-encoding": "chunked",
+    "connection": "keep-alive",
+    "server": "cloudflare",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "Origin",
+    "access-control-allow-methods": "POST, GET, OPTIONS, PUT, DELETE",
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "Content-Length",
+    "x-ratelimit-limit": "60",
+    "x-ratelimit-remaining": "18",
+    "x-ratelimit-reset": "1792399822",
+    "cf-cache-status": "DYNAMIC",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=1MJ8p9Iea%2BOvepsoFbhMt6pJFPW%2BS2eNElSnfYjQKJ1BSy9xCECdo0HkXFmmWnJS15GlHubi0N%2FxMDqBtVjxf%2FaGnybLZSmxevsBfxiX4ixWAwwIxV14InJivSqxUEWuHTLfivO6If20\"}]}",
+    "content-encoding": "gzip",
+    "cf-ray": "a4ce88d6ac65babc-VIE",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "body": [
+    {
+      "symbol": "PFE",
+      "period": "2026-09-01",
+      "strongBuy": 6,
+      "buy": 8,
+      "hold": 20,
+      "sell": 1,
+      "strongSell": 1
+    },
+    {
+      "symbol": "PFE",
+      "period": "2026-08-01",
+      "strongBuy": 6,
+      "buy": 8,
+      "hold": 20,
+      "sell": 1,
+      "strongSell": 1
+    },
+    {
+      "symbol": "PFE",
+      "period": "2026-07-01",
+      "strongBuy": 6,
+      "buy": 9,
+      "hold": 19,
+      "sell": 1,
+      "strongSell": 1
+    },
+    {
+      "symbol": "PFE",
+      "period": "2026-06-01",
+      "strongBuy": 6,
+      "buy": 9,
+      "hold": 18,
+      "sell": 2,
+      "strongSell": 1
+    }
+  ]
+}

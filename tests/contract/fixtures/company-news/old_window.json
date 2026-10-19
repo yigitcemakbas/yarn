@@ -1,0 +1,35 @@
+{
+  "case": "old_window",
+  "endpoint": "/company-news",
+  "params": {
+    "symbol": "AAPL",
+    "from": "2025-09-14",
+    "to": "2025-10-04",
+    "token": "REDACTED"
+  },
+  "token_location": "query",
+  "captured_at": "2026-10-19T08:51:35.145079+00:00",
+  "elapsed_ms": 358.9,
+  "status": 200,
+  "headers": {
+    "date": "Mon, 19 Oct 2026 08:51:35 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "2",
+    "connection": "keep-alive",
+    "server": "cloudflare",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "Origin",
+    "access-control-allow-methods": "POST, GET, OPTIONS, PUT, DELETE",
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "Content-Length",
+    "x-ratelimit-limit": "60",
+    "x-ratelimit-remaining": "52",
+    "x-ratelimit-reset": "1792399943",
+    "cf-cache-status": "DYNAMIC",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=rFmXZcD7bTFwtlQsXpJUfCtawfoSYlb5sSK%2BWd9%2FWNXj6R4D1h%2B8hL%2F%2Bblo%2BML2qXeYGFrFuJrTf0uYz%2FRVQkKvpoAK%2FqbQlRFuho1g2l%2BxOx%2FbUN76rS2qskQ0pi72mO1ATjBZjy8KE\"}]}",
+    "cf-ray": "a4ce8ab0ca62babc-VIE",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "body": []
+}

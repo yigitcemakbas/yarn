@@ -1,0 +1,71 @@
+{
+  "case": "loom_TSLA",
+  "endpoint": "/stock/recommendation",
+  "params": {
+    "symbol": "TSLA",
+    "token": "REDACTED"
+  },
+  "token_location": "query",
+  "captured_at": "2026-10-19T08:49:56.383526+00:00",
+  "elapsed_ms": 146.6,
+  "status": 200,
+  "headers": {
+    "date": "Mon, 19 Oct 2026 08:49:56 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "transfer-encoding": "chunked",
+    "connection": "keep-alive",
+    "server": "cloudflare",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "Origin",
+    "access-control-allow-methods": "POST, GET, OPTIONS, PUT, DELETE",
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "Content-Length",
+    "x-ratelimit-limit": "60",
+    "x-ratelimit-remaining": "38",
+    "x-ratelimit-reset": "1792399822",
+    "cf-cache-status": "DYNAMIC",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=THZACjQEwrTmsESGbpK8IB8KocNJaxoynrriahcbh2psnmOAtVcS9icI1WI7PgTU3LPvSybPXCynKUlUuoM6wyA4IoVug397cQO%2BvxwC15Zf8JWvOuXoTp9hjMEg5KLrWZopHE262c5l\"}]}",
+    "content-encoding": "gzip",
+    "cf-ray": "a4ce88477f59babc-VIE",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "body": [
+    {
+      "symbol": "TSLA",
+      "period": "2026-09-01",
+      "strongBuy": 10,
+      "buy": 20,
+      "hold": 25,
+      "sell": 5,
+      "strongSell": 1
+    },
+    {
+      "symbol": "TSLA",
+      "period": "2026-08-01",
+      "strongBuy": 10,
+      "buy": 20,
+      "hold": 24,
+      "sell": 6,
+      "strongSell": 1
+    },
+    {
+      "symbol": "TSLA",
+      "period": "2026-07-01",
+      "strongBuy": 9,
+      "buy": 20,
+      "hold": 24,
+      "sell": 6,
+      "strongSell": 1
+    },
+    {
+      "symbol": "TSLA",
+      "period": "2026-06-01",
+      "strongBuy": 9,
+      "buy": 20,
+      "hold": 23,
+      "sell": 7,
+      "strongSell": 1
+    }
+  ]
+}

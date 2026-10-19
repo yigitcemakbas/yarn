@@ -1,0 +1,71 @@
+{
+  "case": "loom_NFLX",
+  "endpoint": "/stock/recommendation",
+  "params": {
+    "symbol": "NFLX",
+    "token": "REDACTED"
+  },
+  "token_location": "query",
+  "captured_at": "2026-10-19T08:50:41.823209+00:00",
+  "elapsed_ms": 134.8,
+  "status": 200,
+  "headers": {
+    "date": "Mon, 19 Oct 2026 08:50:41 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "transfer-encoding": "chunked",
+    "connection": "keep-alive",
+    "server": "cloudflare",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "Origin",
+    "access-control-allow-methods": "POST, GET, OPTIONS, PUT, DELETE",
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "Content-Length",
+    "x-ratelimit-limit": "60",
+    "x-ratelimit-remaining": "42",
+    "x-ratelimit-reset": "1792399883",
+    "cf-cache-status": "DYNAMIC",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=BQHD6izwWvnrorkr3bnZgKMUgriQ6IhodqWu8vEh%2FiBwOyu6Kn29HJtjxq%2Fk33EIWNjzPYXAJyxdHBQ5soWr0zZ5WYi2CG7X9gNspOYIUL8GE8R1UKKe5lCt%2BkrB0cd4oT%2BEpMkY11XL\"}]}",
+    "content-encoding": "gzip",
+    "cf-ray": "a4ce89638cdebabc-VIE",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "body": [
+    {
+      "symbol": "NFLX",
+      "period": "2026-09-01",
+      "strongBuy": 14,
+      "buy": 29,
+      "hold": 15,
+      "sell": 0,
+      "strongSell": 0
+    },
+    {
+      "symbol": "NFLX",
+      "period": "2026-08-01",
+      "strongBuy": 14,
+      "buy": 30,
+      "hold": 14,
+      "sell": 0,
+      "strongSell": 0
+    },
+    {
+      "symbol": "NFLX",
+      "period": "2026-07-01",
+      "strongBuy": 16,
+      "buy": 29,
+      "hold": 13,
+      "sell": 0,
+      "strongSell": 0
+    },
+    {
+      "symbol": "NFLX",
+      "period": "2026-06-01",
+      "strongBuy": 16,
+      "buy": 29,
+      "hold": 13,
+      "sell": 0,
+      "strongSell": 0
+    }
+  ]
+}

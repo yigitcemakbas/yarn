@@ -1,0 +1,71 @@
+{
+  "case": "loom_BAC",
+  "endpoint": "/stock/recommendation",
+  "params": {
+    "symbol": "BAC",
+    "token": "REDACTED"
+  },
+  "token_location": "query",
+  "captured_at": "2026-10-19T08:50:04.301901+00:00",
+  "elapsed_ms": 150.8,
+  "status": 200,
+  "headers": {
+    "date": "Mon, 19 Oct 2026 08:50:04 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "transfer-encoding": "chunked",
+    "connection": "keep-alive",
+    "server": "cloudflare",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "Origin",
+    "access-control-allow-methods": "POST, GET, OPTIONS, PUT, DELETE",
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "Content-Length",
+    "x-ratelimit-limit": "60",
+    "x-ratelimit-remaining": "30",
+    "x-ratelimit-reset": "1792399822",
+    "cf-cache-status": "DYNAMIC",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=OH0t3rU6Q8FTBOuTlnC2bNclj9B8Nv9kOjMmRUHv0I%2FXsvRQ13F7BfWZWsKHTpYU%2FAxvPLiujRjQayLc%2B338TVQyo4OHrP%2BOzQtqqagiYZ5fhPJvcRO%2FzEnG9%2F9Lfku%2F6VTnRPAlO80o\"}]}",
+    "content-encoding": "gzip",
+    "cf-ray": "a4ce8878fc55babc-VIE",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "body": [
+    {
+      "symbol": "BAC",
+      "period": "2026-09-01",
+      "strongBuy": 6,
+      "buy": 17,
+      "hold": 6,
+      "sell": 0,
+      "strongSell": 0
+    },
+    {
+      "symbol": "BAC",
+      "period": "2026-08-01",
+      "strongBuy": 6,
+      "buy": 17,
+      "hold": 6,
+      "sell": 0,
+      "strongSell": 0
+    },
+    {
+      "symbol": "BAC",
+      "period": "2026-07-01",
+      "strongBuy": 6,
+      "buy": 17,
+      "hold": 6,
+      "sell": 0,
+      "strongSell": 0
+    },
+    {
+      "symbol": "BAC",
+      "period": "2026-06-01",
+      "strongBuy": 7,
+      "buy": 17,
+      "hold": 5,
+      "sell": 0,
+      "strongSell": 0
+    }
+  ]
+}

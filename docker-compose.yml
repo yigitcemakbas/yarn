@@ -1,0 +1,58 @@
+# yarn: `docker compose up`. Loom reaches it at http://yarn-api:8080/api/v1 once
+# both stacks share a network (see docker-compose.loom.yml).
+
+services:
+  yarn-db:
+    image: postgres:16.15-alpine
+    container_name: yarn-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: yarn
+      POSTGRES_PASSWORD: yarn
+      POSTGRES_DB: yarn
+    ports:
+      # Loopback only: Docker's published ports bypass the host firewall.
+      - "127.0.0.1:5433:5432"
+    volumes:
+      - yarn_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U yarn -d yarn"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  yarn-api:
+    build: .
+    container_name: yarn-api
+    restart: unless-stopped
+    depends_on:
+      yarn-db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql+psycopg://yarn:yarn@yarn-db:5432/yarn
+      SEC_EDGAR_USER_AGENT: ${SEC_EDGAR_USER_AGENT:-yarn market-data yarn@example.com}
+    volumes:
+      - ./secrets:/run/secrets:ro
+    ports:
+      - "127.0.0.1:8080:8080"
+
+  yarn-worker:
+    build: .
+    container_name: yarn-worker
+    restart: unless-stopped
+    depends_on:
+      yarn-db:
+        condition: service_healthy
+      yarn-api:
+        condition: service_started
+    environment:
+      DATABASE_URL: postgresql+psycopg://yarn:yarn@yarn-db:5432/yarn
+      SEC_EDGAR_USER_AGENT: ${SEC_EDGAR_USER_AGENT:-yarn market-data yarn@example.com}
+      SCRAPER_USER_AGENT: ${SCRAPER_USER_AGENT:-yarn market-data yarn@example.com}
+      WARM_TICKERS: ${WARM_TICKERS:-}
+    volumes:
+      - ./secrets:/run/secrets:ro
+    command: ["python", "-m", "app.jobs.scheduler"]
+
+volumes:
+  yarn_pgdata:

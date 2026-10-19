@@ -1,0 +1,71 @@
+{
+  "case": "loom_INTC",
+  "endpoint": "/stock/recommendation",
+  "params": {
+    "symbol": "INTC",
+    "token": "REDACTED"
+  },
+  "token_location": "query",
+  "captured_at": "2026-10-19T08:50:45.567600+00:00",
+  "elapsed_ms": 132.8,
+  "status": 200,
+  "headers": {
+    "date": "Mon, 19 Oct 2026 08:50:45 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "transfer-encoding": "chunked",
+    "connection": "keep-alive",
+    "server": "cloudflare",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "Origin",
+    "access-control-allow-methods": "POST, GET, OPTIONS, PUT, DELETE",
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "Content-Length",
+    "x-ratelimit-limit": "60",
+    "x-ratelimit-remaining": "39",
+    "x-ratelimit-reset": "1792399883",
+    "cf-cache-status": "DYNAMIC",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=a1MY%2FEWQ%2FJzpTFxFX2Wd6QUcB%2B%2BsHVD9qSgCF5xH0siogP4wIF0Rbeuz81CDTnSIjd5%2BB0Tc6TCe3uf9YC%2BSN%2BwyKZqL%2B6xaxJ%2F00Hpu9K6x68D4cdH8VoFQOR3ypm%2FHJASZIGsrbmNO\"}]}",
+    "content-encoding": "gzip",
+    "cf-ray": "a4ce897aec72babc-VIE",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "body": [
+    {
+      "symbol": "INTC",
+      "period": "2026-09-01",
+      "strongBuy": 4,
+      "buy": 15,
+      "hold": 34,
+      "sell": 2,
+      "strongSell": 0
+    },
+    {
+      "symbol": "INTC",
+      "period": "2026-08-01",
+      "strongBuy": 4,
+      "buy": 15,
+      "hold": 33,
+      "sell": 3,
+      "strongSell": 0
+    },
+    {
+      "symbol": "INTC",
+      "period": "2026-07-01",
+      "strongBuy": 5,
+      "buy": 13,
+      "hold": 34,
+      "sell": 3,
+      "strongSell": 0
+    },
+    {
+      "symbol": "INTC",
+      "period": "2026-06-01",
+      "strongBuy": 4,
+      "buy": 13,
+      "hold": 32,
+      "sell": 4,
+      "strongSell": 0
+    }
+  ]
+}

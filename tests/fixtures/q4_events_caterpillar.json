@@ -1,0 +1,15 @@
+{
+ "GetEventListResult": [
+  {
+   "Title": "3Q 2026 Caterpillar Inc. Earnings Conference Call",
+   "StartDate": "10/29/2026 08:30:00",
+   "EndDate": "10/29/2026 09:30:00",
+   "TimeZone": "ET",
+   "TagsList": [
+    "webcast",
+    "feature"
+   ],
+   "EventId": 1804
+  }
+ ]
+}

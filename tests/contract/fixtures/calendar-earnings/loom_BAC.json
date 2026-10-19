@@ -1,0 +1,61 @@
+{
+  "case": "loom_BAC",
+  "endpoint": "/calendar/earnings",
+  "params": {
+    "from": "2025-09-14",
+    "to": "2027-02-16",
+    "symbol": "BAC",
+    "token": "REDACTED"
+  },
+  "token_location": "query",
+  "captured_at": "2026-10-19T08:50:02.652923+00:00",
+  "elapsed_ms": 542.5,
+  "status": 200,
+  "headers": {
+    "date": "Mon, 19 Oct 2026 08:50:03 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "transfer-encoding": "chunked",
+    "connection": "keep-alive",
+    "server": "cloudflare",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "Origin",
+    "access-control-allow-methods": "POST, GET, OPTIONS, PUT, DELETE",
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "Content-Length",
+    "x-ratelimit-limit": "60",
+    "x-ratelimit-remaining": "31",
+    "x-ratelimit-reset": "1792399822",
+    "cf-cache-status": "DYNAMIC",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=p9Upy%2FMPV6SVgCx1t8VyFpicsNFL4yj2S87e1KAGCxbWz0yGFZUdVkinfk4PP3wiECaUHYLQkwxrUREFYiJltf7H7OJowsNza2X%2FfiQZU7kIAkKlhJ57mWEPfRolpdbZD8aNXo9BxHJ8\"}]}",
+    "content-encoding": "gzip",
+    "cf-ray": "a4ce886ebe5bbabc-VIE",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "body": {
+    "earningsCalendar": [
+      {
+        "symbol": "BAC",
+        "date": "2027-01-15",
+        "hour": "bmo",
+        "quarter": 4,
+        "year": 2026,
+        "epsEstimate": 1.151,
+        "epsActual": null,
+        "revenueEstimate": 31083920741,
+        "revenueActual": null
+      },
+      {
+        "symbol": "BAC",
+        "date": "2026-10-14",
+        "hour": "bmo",
+        "quarter": 3,
+        "year": 2026,
+        "epsEstimate": 1.114,
+        "epsActual": 1.08,
+        "revenueEstimate": 30992148343,
+        "revenueActual": 30119000000
+      }
+    ]
+  }
+}

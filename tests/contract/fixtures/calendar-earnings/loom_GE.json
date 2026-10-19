@@ -1,0 +1,61 @@
+{
+  "case": "loom_GE",
+  "endpoint": "/calendar/earnings",
+  "params": {
+    "from": "2025-09-14",
+    "to": "2027-02-16",
+    "symbol": "GE",
+    "token": "REDACTED"
+  },
+  "token_location": "query",
+  "captured_at": "2026-10-19T08:51:06.869227+00:00",
+  "elapsed_ms": 135.7,
+  "status": 200,
+  "headers": {
+    "date": "Mon, 19 Oct 2026 08:51:06 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "transfer-encoding": "chunked",
+    "connection": "keep-alive",
+    "server": "cloudflare",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "Origin",
+    "access-control-allow-methods": "POST, GET, OPTIONS, PUT, DELETE",
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "Content-Length",
+    "x-ratelimit-limit": "60",
+    "x-ratelimit-remaining": "21",
+    "x-ratelimit-reset": "1792399883",
+    "cf-cache-status": "DYNAMIC",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=QOWYCWwwK5noGi4ESp0silXug5mvWAR97SHkxexEsqn4X4PRU97IxmyBB77AJd%2Bm4i5tnvglamsqPOmO76MY%2B5YWA6x6VcVTKm4B6fi7pZ3%2FPaA82xPy%2Bgh6Mkk3xN3TMX5l8SVuvV70\"}]}",
+    "content-encoding": "gzip",
+    "cf-ray": "a4ce8a000d0cbabc-VIE",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "body": {
+    "earningsCalendar": [
+      {
+        "symbol": "GE",
+        "date": "2027-01-20",
+        "hour": "amc",
+        "quarter": 4,
+        "year": 2026,
+        "epsEstimate": 2.1023,
+        "epsActual": null,
+        "revenueEstimate": 13656362047,
+        "revenueActual": null
+      },
+      {
+        "symbol": "GE",
+        "date": "2026-10-19",
+        "hour": "bmo",
+        "quarter": 3,
+        "year": 2026,
+        "epsEstimate": 2.0576,
+        "epsActual": null,
+        "revenueEstimate": 13222814375,
+        "revenueActual": null
+      }
+    ]
+  }
+}

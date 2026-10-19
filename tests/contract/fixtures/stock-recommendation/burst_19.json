@@ -1,0 +1,71 @@
+{
+  "case": "burst_19",
+  "endpoint": "/stock/recommendation",
+  "params": {
+    "symbol": "AAPL",
+    "token": "REDACTED"
+  },
+  "token_location": "query",
+  "captured_at": "2026-10-19T08:52:02.444446+00:00",
+  "elapsed_ms": 127.1,
+  "status": 200,
+  "headers": {
+    "date": "Mon, 19 Oct 2026 08:52:02 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "transfer-encoding": "chunked",
+    "connection": "keep-alive",
+    "server": "cloudflare",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "Origin",
+    "access-control-allow-methods": "POST, GET, OPTIONS, PUT, DELETE",
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "Content-Length",
+    "x-ratelimit-limit": "60",
+    "x-ratelimit-remaining": "17",
+    "x-ratelimit-reset": "1792399943",
+    "cf-cache-status": "DYNAMIC",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=cYUci%2Fblmv%2FXdP2rzehmLdWmxzSHH%2Bw%2BIFs0Jlpofz7saT0B96fLF8zeh4pree%2BTaADX9LrE9Df3m1YSuGnmxskF5ae6CxfpJ7S2Iz9M%2Bb8POsXXjEs8BjiQ79b7LnXkeKDBvhoQ%2BhDJ\"}]}",
+    "content-encoding": "gzip",
+    "cf-ray": "a4ce8b5b7b85babc-VIE",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "body": [
+    {
+      "symbol": "AAPL",
+      "period": "2026-09-01",
+      "strongBuy": 12,
+      "buy": 22,
+      "hold": 15,
+      "sell": 3,
+      "strongSell": 1
+    },
+    {
+      "symbol": "AAPL",
+      "period": "2026-08-01",
+      "strongBuy": 13,
+      "buy": 24,
+      "hold": 14,
+      "sell": 3,
+      "strongSell": 0
+    },
+    {
+      "symbol": "AAPL",
+      "period": "2026-07-01",
+      "strongBuy": 13,
+      "buy": 23,
+      "hold": 16,
+      "sell": 2,
+      "strongSell": 0
+    },
+    {
+      "symbol": "AAPL",
+      "period": "2026-06-01",
+      "strongBuy": 14,
+      "buy": 24,
+      "hold": 15,
+      "sell": 2,
+      "strongSell": 0
+    }
+  ]
+}

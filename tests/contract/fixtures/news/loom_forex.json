@@ -1,0 +1,47 @@
+{
+  "case": "loom_forex",
+  "endpoint": "/news",
+  "params": {
+    "category": "forex",
+    "token": "REDACTED"
+  },
+  "token_location": "query",
+  "captured_at": "2026-10-19T08:51:26.167943+00:00",
+  "elapsed_ms": 199.3,
+  "status": 200,
+  "headers": {
+    "date": "Mon, 19 Oct 2026 08:51:26 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "1063",
+    "connection": "keep-alive",
+    "server": "cloudflare",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "Origin",
+    "access-control-allow-methods": "POST, GET, OPTIONS, PUT, DELETE",
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "Content-Length",
+    "content-encoding": "gzip",
+    "x-ratelimit-limit": "60",
+    "x-ratelimit-remaining": "58",
+    "x-ratelimit-reset": "1792399944",
+    "vary": "accept-encoding",
+    "cf-cache-status": "DYNAMIC",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=W6KqEPf8GMJdNdtRU9na7PhUV0xWeSU3xix1RnKFkQ9atprjTr4wAPKYt6jIPouMNhxKlf95TfeMeuhdts8fJ%2B1CcGaiw3o%2F1h8vLHwPt9tNy4K1clxJ9wyi5ykeUTYzvYv%2F3DbqmTW5\"}]}",
+    "cf-ray": "a4ce8a78aeddbabc-VIE",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "body": [
+    {
+      "category": "forex",
+      "datetime": 1792391739,
+      "headline": "What are the main events for today?",
+      "id": 8642468,
+      "image": "https://investinglive.com/cms/media/Processed/Categories/featured/market-moving-featured-1792390376.jpg?width=960&format=webp",
+      "related": "",
+      "source": "Forexlive",
+      "summary": "<p>EUROPEAN SESSION</p><p>In the European session, we don't have anything on the agenda. Markets have been in a risk-on mode during the Asian session, potentially due to Trump's waiver of several Russia sanctions that helped ease oil prices. </p><p>This is an attempt to ease fuel shortages and contain prices without making concessions to Iran, but Ukraine's attacks on energy infrastructure keep the risk premium high. Without a de-escalation in the Middle East, oil prices are unlikely to come off the highs that much. </p><p>AMERICAN SESSION</p><p>In the American session, we have the Canadian CPI report. The CPI Y/Y is expected at 3.2% vs 3.0% prior, while the Trimmed Mean CPI Y/Y (the inflation measure the BoC is more focused on) is seen at 1.9% vs 1.9% prior. </p><p>Inflation has been comfortably around target in Canada, although upside risks persist due to elevated energy prices. However, the trade war with the US has weighed on growth and the labour market data has been soft. </p><p>The market is currently pricing in a 35% chance of a rate hike at the upcoming meeting and 68% probability for a move in December. I don't think a slightly higher than expected data would prompt the market to expect an imminent rate hike, but a significant surprise could. </p><ul></ul>\n                            This article was written by Giuseppe Dellamotta at investinglive.com.",
+      "url": "https://investinglive.com/news/what-are-the-main-events-for-today-66/"
+    }
+  ]
+}

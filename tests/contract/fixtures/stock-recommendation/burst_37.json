@@ -1,0 +1,35 @@
+{
+  "case": "burst_37",
+  "endpoint": "/stock/recommendation",
+  "params": {
+    "symbol": "AAPL",
+    "token": "REDACTED"
+  },
+  "token_location": "query",
+  "captured_at": "2026-10-19T08:52:05.125046+00:00",
+  "elapsed_ms": 141.4,
+  "status": 429,
+  "headers": {
+    "date": "Mon, 19 Oct 2026 08:52:05 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "54",
+    "connection": "keep-alive",
+    "server": "cloudflare",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "Origin",
+    "access-control-allow-methods": "POST, GET, OPTIONS, PUT, DELETE",
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "Content-Length",
+    "x-ratelimit-limit": "60",
+    "x-ratelimit-remaining": "0",
+    "x-ratelimit-reset": "1792399943",
+    "cf-cache-status": "DYNAMIC",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=UqyAHt2eUcz3Z4zLZZ0tAPPkJ%2BseZ84fmtmXCNtbD03fN4w4ZnjSN0ZtPjF1d0ecs2hh1%2Bruhii759jCppT2Q38jbTeq5M2P%2FvDp3Of6WlDwLkjBAb2Yy4yO7rLVD7Zu3t7Pi8mqpC4p\"}]}",
+    "cf-ray": "a4ce8b6c3917babc-VIE",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "body": {
+    "error": "Too many requests. Please try again later."
+  }
+}

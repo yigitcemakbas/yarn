@@ -1,0 +1,71 @@
+{
+  "case": "loom_CRM",
+  "endpoint": "/stock/recommendation",
+  "params": {
+    "symbol": "CRM",
+    "token": "REDACTED"
+  },
+  "token_location": "query",
+  "captured_at": "2026-10-19T08:50:53.091466+00:00",
+  "elapsed_ms": 131.8,
+  "status": 200,
+  "headers": {
+    "date": "Mon, 19 Oct 2026 08:50:53 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "transfer-encoding": "chunked",
+    "connection": "keep-alive",
+    "server": "cloudflare",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "Origin",
+    "access-control-allow-methods": "POST, GET, OPTIONS, PUT, DELETE",
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "Content-Length",
+    "x-ratelimit-limit": "60",
+    "x-ratelimit-remaining": "33",
+    "x-ratelimit-reset": "1792399883",
+    "cf-cache-status": "DYNAMIC",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=QMPpSflg5x0OYbnNd5R5vm3gx7hBblt2UHgIk7FMIKb%2FoeyZZX25C%2Ff3wh8bJ3aV09yj1DUKNyHhuvSw4GEWStqGUmWfyi9GGN%2FQitg6f0sQlvfHOGtBmFY5OWUeixeSyacCcVPyHKV3\"}]}",
+    "content-encoding": "gzip",
+    "cf-ray": "a4ce89a9ed02babc-VIE",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "body": [
+    {
+      "symbol": "CRM",
+      "period": "2026-09-01",
+      "strongBuy": 14,
+      "buy": 30,
+      "hold": 13,
+      "sell": 1,
+      "strongSell": 1
+    },
+    {
+      "symbol": "CRM",
+      "period": "2026-08-01",
+      "strongBuy": 14,
+      "buy": 29,
+      "hold": 13,
+      "sell": 1,
+      "strongSell": 1
+    },
+    {
+      "symbol": "CRM",
+      "period": "2026-07-01",
+      "strongBuy": 13,
+      "buy": 31,
+      "hold": 12,
+      "sell": 1,
+      "strongSell": 1
+    },
+    {
+      "symbol": "CRM",
+      "period": "2026-06-01",
+      "strongBuy": 12,
+      "buy": 31,
+      "hold": 13,
+      "sell": 1,
+      "strongSell": 1
+    }
+  ]
+}

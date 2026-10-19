@@ -1,0 +1,543 @@
+{
+  "source": {
+    "rea_api_surface_evidence_id": "ev_6cb533c6ae09d107157f3246ce3c9d143e0ca9600bbdbe79b8b5d2c9a73745c1"
+  },
+  "auth": {
+    "query_param": "token",
+    "header": "X-Finnhub-Token",
+    "header_works": true,
+    "bad_token": {
+      "status": 401,
+      "body": {
+        "error": "Invalid API key"
+      }
+    },
+    "no_token": {
+      "status": 401,
+      "body": {
+        "error": "Please use an API key."
+      }
+    }
+  },
+  "endpoints": {
+    "/api/v1/company-news": {
+      "rea_query_parameter_names": [
+        "from",
+        "symbol",
+        "to",
+        "token"
+      ],
+      "rea_record_ordinals": 41,
+      "body_wrapper": null,
+      "item_schema": {
+        "key_orders": [
+          {
+            "keys": [
+              "category",
+              "datetime",
+              "headline",
+              "id",
+              "image",
+              "related",
+              "source",
+              "summary",
+              "url"
+            ],
+            "count": 7743
+          }
+        ],
+        "fields": {
+          "category": {
+            "types": {
+              "string": 7743
+            },
+            "example": "company"
+          },
+          "datetime": {
+            "types": {
+              "integer": 7743
+            },
+            "example": 1792392731
+          },
+          "headline": {
+            "types": {
+              "string": 7743
+            },
+            "example": "Microsoft Walks Away From Nscale’s UK Data Center as the Grid Runs Out of Power"
+          },
+          "id": {
+            "types": {
+              "integer": 7743
+            },
+            "example": 142997609
+          },
+          "image": {
+            "types": {
+              "string": 7743
+            },
+            "example": "https://s.yimg.com/rz/stage/p/yahoo_finance_en-US_h_p_finance_2.png"
+          },
+          "related": {
+            "types": {
+              "string": 7743
+            },
+            "example": "MSFT"
+          },
+          "source": {
+            "types": {
+              "string": 7743
+            },
+            "example": "Yahoo"
+          },
+          "summary": {
+            "types": {
+              "string": 7743
+            },
+            "example": "Microsoft (MSFT:NASDAQ) has pulled out of a planned AI data center in Loughton, Essex, that British cloud provider Nscale was building for it, Reuters reported on October 18, citing the Telegraph. Microsoft is one of Nscale’s two largest customers."
+          },
+          "url": {
+            "types": {
+              "string": 7743
+            },
+            "example": "https://finnhub.io/api/news?id=77d9d8bfb9bee72de133f0d26ae9f7d6aa81123f76e39ea4a330dd955bb47c59"
+          }
+        },
+        "items_observed": 7743
+      },
+      "items_per_response": {
+        "min": 0,
+        "max": 250
+      },
+      "sorted_desc_by": "datetime",
+      "error_responses": {
+        "bad_date_format": {
+          "status": 422,
+          "body": {
+            "error": "Wrong date format. Please use 2022-01-15 format for from and to params."
+          }
+        },
+        "bad_token": {
+          "status": 401,
+          "body": {
+            "error": "Invalid API key"
+          }
+        },
+        "missing_symbol": {
+          "status": 422,
+          "body": {
+            "error": "Missing parameter symbol"
+          }
+        },
+        "no_token": {
+          "status": 401,
+          "body": {
+            "error": "Please use an API key."
+          }
+        }
+      },
+      "edge_cases": {
+        "bad_date_format": {
+          "status": 422,
+          "items": null
+        },
+        "bad_token": {
+          "status": 401,
+          "items": null
+        },
+        "from_after_to": {
+          "status": 200,
+          "items": 0
+        },
+        "header_token": {
+          "status": 200,
+          "items": 29
+        },
+        "lowercase_symbol": {
+          "status": 200,
+          "items": 117
+        },
+        "missing_dates": {
+          "status": 200,
+          "items": 4
+        },
+        "missing_symbol": {
+          "status": 422,
+          "items": null
+        },
+        "no_token": {
+          "status": 401,
+          "items": null
+        },
+        "old_window": {
+          "status": 200,
+          "items": 0
+        },
+        "range_over_1y": {
+          "status": 200,
+          "items": 248
+        },
+        "unknown_symbol": {
+          "status": 200,
+          "items": 0
+        }
+      },
+      "content_type": "application/json; charset=utf-8"
+    },
+    "/api/v1/news": {
+      "rea_query_parameter_names": [
+        "category",
+        "minId",
+        "token"
+      ],
+      "rea_record_ordinals": 8,
+      "body_wrapper": null,
+      "item_schema": {
+        "key_orders": [
+          {
+            "keys": [
+              "category",
+              "datetime",
+              "headline",
+              "id",
+              "image",
+              "related",
+              "source",
+              "summary",
+              "url"
+            ],
+            "count": 556
+          }
+        ],
+        "fields": {
+          "category": {
+            "types": {
+              "string": 556
+            },
+            "example": "business"
+          },
+          "datetime": {
+            "types": {
+              "integer": 556
+            },
+            "example": 1792364768
+          },
+          "headline": {
+            "types": {
+              "string": 556
+            },
+            "example": "UK housing market showing signs of mortgage rates impact, Rightmove says - Reuters"
+          },
+          "id": {
+            "types": {
+              "integer": 556
+            },
+            "example": 8641128
+          },
+          "image": {
+            "types": {
+              "string": 556
+            },
+            "example": "https://static2.finnhub.io/file/finnhub/logo/reuters_logo.jpeg"
+          },
+          "related": {
+            "types": {
+              "string": 556
+            },
+            "example": null
+          },
+          "source": {
+            "types": {
+              "string": 556
+            },
+            "example": "Reuters"
+          },
+          "summary": {
+            "types": {
+              "string": 556
+            },
+            "example": "UK housing market showing signs of mortgage rates impact, Rightmove says  Reuters"
+          },
+          "url": {
+            "types": {
+              "string": 556
+            },
+            "example": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNaWFjYmdlWlpxc2JxSGc1YnZhM3ptTFp2bHdQbUUwVS1XTnoyeFpMVXh5TjNINy0tWm5hMmViQ2xpdzRFZWRHZjRyMHF4TkhDY0l0ZXhjS2FUTWpaNlpGRjl0ZEFUTm9qR1B2bUpYTnpWQjVNWXhwZDR0OFo0V2RheDdobm5jMGFCNWZuXzQ5WUdzM20xQ2dkd3JkUW9PWFh3Z1JrREVxcnJyNG1UR0M5ZXM0SQ?oc=5"
+          }
+        },
+        "items_observed": 556
+      },
+      "items_per_response": {
+        "min": 1,
+        "max": 100
+      },
+      "sorted_desc_by": "datetime",
+      "error_responses": {},
+      "edge_cases": {
+        "general_for_minid": {
+          "status": 200,
+          "items": 100
+        },
+        "invalid_category": {
+          "status": 200,
+          "items": 100
+        },
+        "minid": {
+          "status": 200,
+          "items": 49
+        },
+        "missing_category": {
+          "status": 200,
+          "items": 70
+        }
+      },
+      "content_type": "application/json; charset=utf-8"
+    },
+    "/api/v1/calendar/earnings": {
+      "rea_query_parameter_names": [
+        "from",
+        "international",
+        "symbol",
+        "to",
+        "token"
+      ],
+      "rea_record_ordinals": 35,
+      "body_wrapper": "earningsCalendar",
+      "item_schema": {
+        "key_orders": [
+          {
+            "keys": [
+              "symbol",
+              "date",
+              "hour",
+              "quarter",
+              "year",
+              "epsEstimate",
+              "epsActual",
+              "revenueEstimate",
+              "revenueActual"
+            ],
+            "count": 539
+          }
+        ],
+        "fields": {
+          "symbol": {
+            "types": {
+              "string": 539
+            },
+            "example": "AERO"
+          },
+          "date": {
+            "types": {
+              "string": 539
+            },
+            "example": "2026-10-19"
+          },
+          "hour": {
+            "types": {
+              "string": 539
+            },
+            "example": "amc"
+          },
+          "quarter": {
+            "types": {
+              "integer": 539
+            },
+            "example": 3
+          },
+          "year": {
+            "types": {
+              "integer": 539
+            },
+            "example": 2026
+          },
+          "epsEstimate": {
+            "types": {
+              "number": 272,
+              "null": 265,
+              "integer": 2
+            },
+            "example": 0.4362
+          },
+          "epsActual": {
+            "types": {
+              "null": 389,
+              "number": 147,
+              "integer": 3
+            },
+            "example": -0.03
+          },
+          "revenueEstimate": {
+            "types": {
+              "integer": 268,
+              "null": 271
+            },
+            "example": 1661605704
+          },
+          "revenueActual": {
+            "types": {
+              "null": 390,
+              "integer": 149
+            },
+            "example": 1140000
+          }
+        },
+        "items_observed": 539
+      },
+      "items_per_response": {
+        "min": 0,
+        "max": 439
+      },
+      "sorted_desc_by": null,
+      "error_responses": {
+        "international_flag": {
+          "status": 401,
+          "body": {
+            "error": "You don't have access to this resource. International market is only available for premium users."
+          }
+        }
+      },
+      "edge_cases": {
+        "all_symbols_default": {
+          "status": 200,
+          "items": 439
+        },
+        "all_symbols_one_day": {
+          "status": 200,
+          "items": 44
+        },
+        "international_flag": {
+          "status": 401,
+          "items": null
+        },
+        "long_history": {
+          "status": 200,
+          "items": 0
+        },
+        "unknown_symbol": {
+          "status": 200,
+          "items": 0
+        }
+      },
+      "content_type": "application/json; charset=utf-8"
+    },
+    "/api/v1/stock/recommendation": {
+      "rea_query_parameter_names": [
+        "symbol",
+        "token"
+      ],
+      "rea_record_ordinals": 71,
+      "body_wrapper": null,
+      "item_schema": {
+        "key_orders": [
+          {
+            "keys": [
+              "symbol",
+              "period",
+              "strongBuy",
+              "buy",
+              "hold",
+              "sell",
+              "strongSell"
+            ],
+            "count": 124
+          }
+        ],
+        "fields": {
+          "symbol": {
+            "types": {
+              "string": 124
+            },
+            "example": "AAPL"
+          },
+          "period": {
+            "types": {
+              "string": 124
+            },
+            "example": "2026-09-01"
+          },
+          "strongBuy": {
+            "types": {
+              "integer": 124
+            },
+            "example": 12
+          },
+          "buy": {
+            "types": {
+              "integer": 124
+            },
+            "example": 22
+          },
+          "hold": {
+            "types": {
+              "integer": 124
+            },
+            "example": 15
+          },
+          "sell": {
+            "types": {
+              "integer": 124
+            },
+            "example": 3
+          },
+          "strongSell": {
+            "types": {
+              "integer": 124
+            },
+            "example": 1
+          }
+        },
+        "items_observed": 124
+      },
+      "items_per_response": {
+        "min": 0,
+        "max": 4
+      },
+      "sorted_desc_by": "period",
+      "error_responses": {
+        "burst_37": {
+          "status": 429,
+          "body": {
+            "error": "Too many requests. Please try again later."
+          }
+        },
+        "missing_symbol": {
+          "status": 422,
+          "body": {
+            "error": "Missing parameter symbol"
+          }
+        }
+      },
+      "edge_cases": {
+        "lowercase_symbol": {
+          "status": 200,
+          "items": 4
+        },
+        "missing_symbol": {
+          "status": 422,
+          "items": null
+        },
+        "unknown_symbol": {
+          "status": 200,
+          "items": 0
+        }
+      },
+      "content_type": "application/json; charset=utf-8"
+    }
+  },
+  "rate_limit": {
+    "headers": [
+      "x-ratelimit-limit",
+      "x-ratelimit-remaining",
+      "x-ratelimit-reset"
+    ],
+    "limit_per_minute": 60,
+    "reset_is_epoch_seconds": true,
+    "status_429": {
+      "status": 429,
+      "body": {
+        "error": "Too many requests. Please try again later."
+      }
+    },
+    "retry_after_header": false
+  }
+}

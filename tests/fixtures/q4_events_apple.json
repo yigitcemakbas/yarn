@@ -1,0 +1,14 @@
+{
+ "GetEventListResult": [
+  {
+   "Title": "FY 26 Fourth Quarter Results",
+   "StartDate": "11/02/2026 14:00:00",
+   "EndDate": "11/02/2026 17:00:00",
+   "TimeZone": "PT",
+   "TagsList": [
+    "webcast"
+   ],
+   "EventId": 1116
+  }
+ ]
+}

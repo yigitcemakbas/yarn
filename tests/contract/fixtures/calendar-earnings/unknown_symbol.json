@@ -1,0 +1,37 @@
+{
+  "case": "unknown_symbol",
+  "endpoint": "/calendar/earnings",
+  "params": {
+    "symbol": "ZZZZZQ",
+    "from": "2025-09-14",
+    "to": "2027-02-16",
+    "token": "REDACTED"
+  },
+  "token_location": "query",
+  "captured_at": "2026-10-19T08:51:52.370491+00:00",
+  "elapsed_ms": 138.6,
+  "status": 200,
+  "headers": {
+    "date": "Mon, 19 Oct 2026 08:51:52 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "23",
+    "connection": "keep-alive",
+    "server": "cloudflare",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "Origin",
+    "access-control-allow-methods": "POST, GET, OPTIONS, PUT, DELETE",
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "Content-Length",
+    "x-ratelimit-limit": "60",
+    "x-ratelimit-remaining": "43",
+    "x-ratelimit-reset": "1792399943",
+    "cf-cache-status": "DYNAMIC",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=JqTBK6goYpXpvy9DAvJQN5IcXqKILiFTBHMIOCvxBiEnY4AuodTtYdxqyGans9%2F61EYogg1TzswrM%2BL0TJvtfUMqyjYbt3U0xNx4F7ptUyi8U5gnbFoxLPqPvb%2FAXmFNEnvTr9Z2%2BaSc\"}]}",
+    "cf-ray": "a4ce8b1c8ce1babc-VIE",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "body": {
+    "earningsCalendar": []
+  }
+}

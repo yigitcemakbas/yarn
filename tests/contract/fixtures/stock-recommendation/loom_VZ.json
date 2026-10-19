@@ -1,0 +1,71 @@
+{
+  "case": "loom_VZ",
+  "endpoint": "/stock/recommendation",
+  "params": {
+    "symbol": "VZ",
+    "token": "REDACTED"
+  },
+  "token_location": "query",
+  "captured_at": "2026-10-19T08:51:15.849105+00:00",
+  "elapsed_ms": 134.6,
+  "status": 200,
+  "headers": {
+    "date": "Mon, 19 Oct 2026 08:51:15 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "transfer-encoding": "chunked",
+    "connection": "keep-alive",
+    "server": "cloudflare",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "Origin",
+    "access-control-allow-methods": "POST, GET, OPTIONS, PUT, DELETE",
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "Content-Length",
+    "x-ratelimit-limit": "60",
+    "x-ratelimit-remaining": "14",
+    "x-ratelimit-reset": "1792399883",
+    "cf-cache-status": "DYNAMIC",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=2DICWVgnO%2FaTqZFyEAeyTVaOublojgksxQmwY%2Bl2RwpHvmKs0a8PsFtxYCQjT64KkKRnf4S9oM3NgY%2FLpXWjXCtLxi1MUcGd9mn9HL3zd5%2FecY1VgKuUH7KvhfpfFj3lt5UI6BA1ayt9\"}]}",
+    "content-encoding": "gzip",
+    "cf-ray": "a4ce8a382dfababc-VIE",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "body": [
+    {
+      "symbol": "VZ",
+      "period": "2026-09-01",
+      "strongBuy": 7,
+      "buy": 11,
+      "hold": 18,
+      "sell": 0,
+      "strongSell": 0
+    },
+    {
+      "symbol": "VZ",
+      "period": "2026-08-01",
+      "strongBuy": 7,
+      "buy": 11,
+      "hold": 18,
+      "sell": 0,
+      "strongSell": 0
+    },
+    {
+      "symbol": "VZ",
+      "period": "2026-07-01",
+      "strongBuy": 7,
+      "buy": 11,
+      "hold": 18,
+      "sell": 0,
+      "strongSell": 0
+    },
+    {
+      "symbol": "VZ",
+      "period": "2026-06-01",
+      "strongBuy": 7,
+      "buy": 11,
+      "hold": 17,
+      "sell": 0,
+      "strongSell": 0
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# Join loom's compose network so loom's backend reaches yarn at yarn-api:8080.
+#   docker compose -f docker-compose.yml -f docker-compose.loom.yml up -d
+services:
+  yarn-api:
+    networks: [default, loom]
+networks:
+  loom:
+    external: true
+    name: loom_default

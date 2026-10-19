@@ -1,0 +1,80 @@
+{
+  "case": "missing_dates",
+  "endpoint": "/company-news",
+  "params": {
+    "symbol": "AAPL",
+    "token": "REDACTED"
+  },
+  "token_location": "query",
+  "captured_at": "2026-10-19T08:51:37.847998+00:00",
+  "elapsed_ms": 134.1,
+  "status": 200,
+  "headers": {
+    "date": "Mon, 19 Oct 2026 08:51:37 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "1179",
+    "connection": "keep-alive",
+    "server": "cloudflare",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "Origin",
+    "access-control-allow-methods": "POST, GET, OPTIONS, PUT, DELETE",
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "Content-Length",
+    "content-encoding": "gzip",
+    "x-ratelimit-limit": "60",
+    "x-ratelimit-remaining": "50",
+    "x-ratelimit-reset": "1792399943",
+    "vary": "accept-encoding",
+    "cf-cache-status": "DYNAMIC",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Ra1m1Q1gRKyZZ7S4qfoX0dtfgUMvWqmF426n9vvDZXcq1oRXYjtYVzTy%2BvPOqyDJscIASm4y5eIax9DiprZ6OyAmtnWKdaE5SDzHsTv9xdfkdgbzQeHU1ynLztP%2FmdB%2BiZrMicMr4Ks1\"}]}",
+    "cf-ray": "a4ce8ac1a938babc-VIE",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "body": [
+    {
+      "category": "company",
+      "datetime": 1792380611,
+      "headline": "Trump’s $330 Million White House Ballroom Donor List Reveals Nvidia, Apple and Google Among Top Tech Contributors: Report (UPDATED)",
+      "id": 142992629,
+      "image": "https://s.yimg.com/rz/stage/p/yahoo_finance_en-US_h_p_finance_2.png",
+      "related": "AAPL",
+      "source": "Yahoo",
+      "summary": "Editor’s note: The story has been updated to include a comment from Nvidia. President Donald Trump’s White House ballroom project donor list reportedly reveals companies and individuals linked to federal contracts, policy decisions, and a presidential pardon. NVIDIA Corp. and...",
+      "url": "https://finnhub.io/api/news?id=833bc80d9748fdde323eb686e9f8065372b20c6efd59e1202148bb04a26a5e57"
+    },
+    {
+      "category": "company",
+      "datetime": 1792380076,
+      "headline": "Starboard sees big upside in Skyworks after Qorvo merger, Bloomberg reports",
+      "id": 142992149,
+      "image": "https://s.yimg.com/rz/stage/p/yahoo_finance_en-US_h_p_finance_2.png",
+      "related": "AAPL",
+      "source": "Yahoo",
+      "summary": "Investing.com-- Starboard Value sees significant upside in Skyworks Solutions (NASDAQ:SWKS) if the wireless chipmaker delivers on the cost savings and margin targets of its merger with Qorvo, Bloomberg News reported on Monday, citing people familiar with the matter.",
+      "url": "https://finnhub.io/api/news?id=e0db64bd2e9fe68b45156e9dbb2034df9a1d0fc7ee0119050ab3277262f8e3da"
+    },
+    {
+      "category": "company",
+      "datetime": 1792375488,
+      "headline": "AAPL, TSLA, NFLX, GME, RKLB: Why Retail Traders Couldn’t Take Their Eyes Off These Stocks Last Week",
+      "id": 142992148,
+      "image": "https://s.yimg.com/rz/stage/p/yahoo_finance_en-US_h_p_finance_2.png",
+      "related": "AAPL",
+      "source": "Yahoo",
+      "summary": "Developments across technology, entertainment, retail investing, and the commercial space industry drew interest last week.",
+      "url": "https://finnhub.io/api/news?id=033f4af5f4f91b753316232bf70e79ea449c1cd8db506f803ae8705ec9c6f0fa"
+    },
+    {
+      "category": "company",
+      "datetime": 1792374420,
+      "headline": "Apple’s $1,999 iPhone bet just got its first answer",
+      "id": 142991441,
+      "image": "https://s.yimg.com/rz/stage/p/yahoo_finance_en-US_h_p_finance_2.png",
+      "related": "AAPL",
+      "source": "Yahoo",
+      "summary": "iPhone Duo orders slipped into 2027 within minutes of preorders opening.",
+      "url": "https://finnhub.io/api/news?id=6d350d3a1c5bb185f31b310406e3583f21b061b926629db31bdc881cd2a5ad69"
+    }
+  ]
+}

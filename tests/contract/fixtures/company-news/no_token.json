@@ -1,0 +1,33 @@
+{
+  "case": "no_token",
+  "endpoint": "/company-news",
+  "params": {
+    "symbol": "AAPL",
+    "from": "2026-10-17",
+    "to": "2026-10-19"
+  },
+  "token_location": "none",
+  "captured_at": "2026-10-19T08:51:42.827324+00:00",
+  "elapsed_ms": 133.4,
+  "status": 401,
+  "headers": {
+    "date": "Mon, 19 Oct 2026 08:51:42 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "34",
+    "connection": "keep-alive",
+    "server": "cloudflare",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "Origin",
+    "access-control-allow-methods": "POST, GET, OPTIONS, PUT, DELETE",
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "Content-Length",
+    "cf-cache-status": "DYNAMIC",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=HUU1Q9qVXbmUCwYeXK4%2BlK7r6JGlORxbi%2FOSmakAbEL9q3GmkUr23qSD6Cb0bia5%2BIy%2Fi8MiOqmfvWVMFigQX4Djsb58kBy6eZ6hOpqT9KCLSY90V8lMnXuvF2QSH%2BXfsIEW7OV51dIq\"}]}",
+    "cf-ray": "a4ce8ae0c84ababc-VIE",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "body": {
+    "error": "Please use an API key."
+  }
+}

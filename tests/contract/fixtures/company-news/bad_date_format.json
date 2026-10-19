@@ -1,0 +1,37 @@
+{
+  "case": "bad_date_format",
+  "endpoint": "/company-news",
+  "params": {
+    "symbol": "AAPL",
+    "from": "2026/01/01",
+    "to": "2026/01/05",
+    "token": "REDACTED"
+  },
+  "token_location": "query",
+  "captured_at": "2026-10-19T08:51:39.084090+00:00",
+  "elapsed_ms": 136.4,
+  "status": 422,
+  "headers": {
+    "date": "Mon, 19 Oct 2026 08:51:39 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "83",
+    "connection": "keep-alive",
+    "server": "cloudflare",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "Origin",
+    "access-control-allow-methods": "POST, GET, OPTIONS, PUT, DELETE",
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "Content-Length",
+    "x-ratelimit-limit": "60",
+    "x-ratelimit-remaining": "49",
+    "x-ratelimit-reset": "1792399943",
+    "cf-cache-status": "DYNAMIC",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=zGpgWY1bZucowLKL5ju%2BFHj%2BCVGJ3p4DX6Ilal76zNaDLT%2B%2F0m9J6aDHwMsmBK10pWaOw%2F%2FiUlcO8rHXgQaSJLGp8vmT%2BrHZMoJdNMHHkutpDpL2PoRkqixmdJ57zbrvDWPXlZfFMgKw\"}]}",
+    "cf-ray": "a4ce8ac96960babc-VIE",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "body": {
+    "error": "Wrong date format. Please use 2022-01-15 format for from and to params."
+  }
+}

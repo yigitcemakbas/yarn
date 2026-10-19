@@ -1,0 +1,38 @@
+{
+  "case": "international_flag",
+  "endpoint": "/calendar/earnings",
+  "params": {
+    "symbol": "AAPL",
+    "from": "2026-07-11",
+    "to": "2026-10-19",
+    "international": "true",
+    "token": "REDACTED"
+  },
+  "token_location": "query",
+  "captured_at": "2026-10-19T08:51:53.616094+00:00",
+  "elapsed_ms": 128.8,
+  "status": 401,
+  "headers": {
+    "date": "Mon, 19 Oct 2026 08:51:53 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "109",
+    "connection": "keep-alive",
+    "server": "cloudflare",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "Origin",
+    "access-control-allow-methods": "POST, GET, OPTIONS, PUT, DELETE",
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "Content-Length",
+    "x-ratelimit-limit": "60",
+    "x-ratelimit-remaining": "42",
+    "x-ratelimit-reset": "1792399943",
+    "cf-cache-status": "DYNAMIC",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=XPkvokOAEMtgLW4og6DyoPyw3mAz1oFy6edtj3bMCzhVZqtzwz5DvatLCKX7yQdAIyTH5FALZq%2FFc805WcoPP1XX4aCJ%2Ftkq89ZnqxWKSGs59aWY0Iq3YjJ7U8lNkgVVTwBBRTHAZFov\"}]}",
+    "cf-ray": "a4ce8b244f31babc-VIE",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "body": {
+    "error": "You don't have access to this resource. International market is only available for premium users."
+  }
+}

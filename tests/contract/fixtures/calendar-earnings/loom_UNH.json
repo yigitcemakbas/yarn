@@ -1,0 +1,61 @@
+{
+  "case": "loom_UNH",
+  "endpoint": "/calendar/earnings",
+  "params": {
+    "from": "2025-09-14",
+    "to": "2027-02-16",
+    "symbol": "UNH",
+    "token": "REDACTED"
+  },
+  "token_location": "query",
+  "captured_at": "2026-10-19T08:50:21.777946+00:00",
+  "elapsed_ms": 135.0,
+  "status": 200,
+  "headers": {
+    "date": "Mon, 19 Oct 2026 08:50:21 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "transfer-encoding": "chunked",
+    "connection": "keep-alive",
+    "server": "cloudflare",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "Origin",
+    "access-control-allow-methods": "POST, GET, OPTIONS, PUT, DELETE",
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "Content-Length",
+    "x-ratelimit-limit": "60",
+    "x-ratelimit-remaining": "15",
+    "x-ratelimit-reset": "1792399822",
+    "cf-cache-status": "DYNAMIC",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=aDtPAskbemCE%2FL9C6lg3CQLj38sq6Kc1K3e4Uy7Gb9CIxgXm51xxQ3kyoSgvyIn7diVGjH7ldSWS96pkpEQi5kJSXmxMalJE5gPpsRkC4gPb2ZENcTxvpRcDWqpTNCKgiihEYc0hLWDt\"}]}",
+    "content-encoding": "gzip",
+    "cf-ray": "a4ce88e6394bbabc-VIE",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "body": {
+    "earningsCalendar": [
+      {
+        "symbol": "UNH",
+        "date": "2027-01-25",
+        "hour": "amc",
+        "quarter": 4,
+        "year": 2026,
+        "epsEstimate": 2.2753,
+        "epsActual": null,
+        "revenueEstimate": 113262248400,
+        "revenueActual": null
+      },
+      {
+        "symbol": "UNH",
+        "date": "2026-10-13",
+        "hour": "bmo",
+        "quarter": 3,
+        "year": 2026,
+        "epsEstimate": 4.1809,
+        "epsActual": 4.69,
+        "revenueEstimate": 112517286035,
+        "revenueActual": 112694000000
+      }
+    ]
+  }
+}

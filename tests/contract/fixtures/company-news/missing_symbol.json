@@ -1,0 +1,36 @@
+{
+  "case": "missing_symbol",
+  "endpoint": "/company-news",
+  "params": {
+    "from": "2026-10-16",
+    "to": "2026-10-19",
+    "token": "REDACTED"
+  },
+  "token_location": "query",
+  "captured_at": "2026-10-19T08:51:36.609991+00:00",
+  "elapsed_ms": 131.4,
+  "status": 422,
+  "headers": {
+    "date": "Mon, 19 Oct 2026 08:51:36 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "36",
+    "connection": "keep-alive",
+    "server": "cloudflare",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "Origin",
+    "access-control-allow-methods": "POST, GET, OPTIONS, PUT, DELETE",
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "Content-Length",
+    "x-ratelimit-limit": "60",
+    "x-ratelimit-remaining": "51",
+    "x-ratelimit-reset": "1792399943",
+    "cf-cache-status": "DYNAMIC",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=1uYGV%2BJE2LSST2smkjU88kqAfya9wUtl2dueFLbUoZj6FXMqR5MQTmKmvbfPxhaMb2RtVLPzO%2B9HQLw%2FDrPVyvQHtUNI3PheEHintxOl5tapNrF1EVo%2B7yI0Iqn%2BQ4dPWlEcYE8VzqYt\"}]}",
+    "cf-ray": "a4ce8ab9e844babc-VIE",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "body": {
+    "error": "Missing parameter symbol"
+  }
+}

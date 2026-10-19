@@ -1,0 +1,71 @@
+{
+  "case": "loom_F",
+  "endpoint": "/stock/recommendation",
+  "params": {
+    "symbol": "F",
+    "token": "REDACTED"
+  },
+  "token_location": "query",
+  "captured_at": "2026-10-19T08:51:11.862918+00:00",
+  "elapsed_ms": 389.6,
+  "status": 200,
+  "headers": {
+    "date": "Mon, 19 Oct 2026 08:51:12 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "transfer-encoding": "chunked",
+    "connection": "keep-alive",
+    "server": "cloudflare",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "Origin",
+    "access-control-allow-methods": "POST, GET, OPTIONS, PUT, DELETE",
+    "access-control-allow-origin": "*",
+    "access-control-expose-headers": "Content-Length",
+    "x-ratelimit-limit": "60",
+    "x-ratelimit-remaining": "17",
+    "x-ratelimit-reset": "1792399883",
+    "cf-cache-status": "DYNAMIC",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=NEIkvZ949RddvN42PyecEhmLpMnBqnmle8vfVPE%2BC3kSUbM%2F9Ez2%2FsZALuRg6NXxk3XIgvXRGydfWvnHUazVMkHHAxACxqYBJLVBktA%2FYzdssTlqHCAjJ0HApV25LVKfYceAIPWmhgO1\"}]}",
+    "content-encoding": "gzip",
+    "cf-ray": "a4ce8a1f3b7cbabc-VIE",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "body": [
+    {
+      "symbol": "F",
+      "period": "2026-09-01",
+      "strongBuy": 6,
+      "buy": 6,
+      "hold": 16,
+      "sell": 1,
+      "strongSell": 0
+    },
+    {
+      "symbol": "F",
+      "period": "2026-08-01",
+      "strongBuy": 6,
+      "buy": 6,
+      "hold": 16,
+      "sell": 2,
+      "strongSell": 0
+    },
+    {
+      "symbol": "F",
+      "period": "2026-07-01",
+      "strongBuy": 4,
+      "buy": 6,
+      "hold": 18,
+      "sell": 1,
+      "strongSell": 1
+    },
+    {
+      "symbol": "F",
+      "period": "2026-06-01",
+      "strongBuy": 4,
+      "buy": 6,
+      "hold": 18,
+      "sell": 1,
+      "strongSell": 1
+    }
+  ]
+}

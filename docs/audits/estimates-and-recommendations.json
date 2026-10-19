@@ -1,0 +1,568 @@
+{
+  "ticker": "AAPL",
+  "finnhub_reference": {
+    "earnings": {
+      "symbol": "AAPL",
+      "date": "2026-11-02",
+      "hour": "amc",
+      "quarter": 4,
+      "year": 2026,
+      "epsEstimate": 2.0225,
+      "epsActual": null,
+      "revenueEstimate": 115330851831,
+      "revenueActual": null
+    },
+    "recommendation": {
+      "symbol": "AAPL",
+      "period": "2026-09-01",
+      "strongBuy": 12,
+      "buy": 22,
+      "hold": 15,
+      "sell": 3,
+      "strongSell": 1
+    }
+  },
+  "needles": {
+    "epsEstimate_exact": [
+      "2.0225"
+    ],
+    "epsEstimate_2dp": [
+      "2.02"
+    ],
+    "revenueEstimate_exact": [
+      "115330851831"
+    ],
+    "revenueEstimate_billions_2dp": [
+      "115.33B",
+      "115.33 B",
+      "115.33"
+    ],
+    "recommendation_counts_json": [
+      "\"strongBuy\":12,\"buy\":22,\"hold\":15"
+    ]
+  },
+  "candidates": [
+    {
+      "candidate": "yahoo_analysis",
+      "url": "https://finance.yahoo.com/quote/AAPL/analysis/",
+      "shows": "estimates+recommendations",
+      "captured": true,
+      "evidence_id": "ev_6b6645594e4a55ef7e9bad749fb95f8ab0c5c73c43d319844d2da756887aefce",
+      "document_status": 200,
+      "responses": 356,
+      "data_hosts": [
+        "analytics-456562683.collector.yahoo.net",
+        "finance.yahoo.com",
+        "guce.yahoo.com",
+        "loc.yahoo.com",
+        "nexus-gateway-prod.media.yahoo.com",
+        "query1.finance.yahoo.com",
+        "query2.finance.yahoo.com",
+        "region1.google-analytics.com",
+        "s.yimg.com",
+        "udc.yahoo.com"
+      ],
+      "vendor_attributions": {
+        "Benzinga": [
+          "finance.yahoo.com"
+        ],
+        "Bloomberg": [
+          "finance.yahoo.com"
+        ],
+        "Dow Jones": [
+          "finance.yahoo.com"
+        ],
+        "Morningstar": [
+          "finance.yahoo.com"
+        ],
+        "Yahoo": [
+          "ec.yimg.com",
+          "finance.yahoo.com",
+          "guce.yahoo.com",
+          "s.yimg.com"
+        ],
+        "Zacks": [
+          "finance.yahoo.com"
+        ]
+      },
+      "finnhub_value_matches": {
+        "epsEstimate_2dp": [
+          "2.02 @ ec.yimg.com",
+          "2.02 @ finance.yahoo.com",
+          "2.02 @ s.yimg.com"
+        ]
+      },
+      "completeness": "incomplete"
+    },
+    {
+      "candidate": "nasdaq_earnings",
+      "url": "https://www.nasdaq.com/market-activity/stocks/aapl/earnings",
+      "shows": "estimates",
+      "captured": false,
+      "error": {
+        "error": "Browser scenario capture failed",
+        "code": "execution_failure",
+        "message": "Analysis could not complete. Run `rea doctor` and review the reported details; repeating the unchanged request is not expected to succeed."
+      }
+    },
+    {
+      "candidate": "nasdaq_analyst",
+      "url": "https://www.nasdaq.com/market-activity/stocks/aapl/analyst-research",
+      "shows": "recommendations",
+      "captured": false,
+      "error": {
+        "error": "Browser scenario capture failed",
+        "code": "execution_failure",
+        "message": "Analysis could not complete. Run `rea doctor` and review the reported details; repeating the unchanged request is not expected to succeed."
+      }
+    },
+    {
+      "candidate": "marketwatch_estimates",
+      "url": "https://www.marketwatch.com/investing/stock/aapl/analystestimates",
+      "shows": "estimates+recommendations",
+      "captured": true,
+      "evidence_id": "ev_a62824aed425c056e1e23d002a72ceac5c42dd351fce9c5be6a2993207805b5d",
+      "document_status": 401,
+      "responses": 11,
+      "data_hosts": [
+        "geo.captcha-delivery.com"
+      ],
+      "vendor_attributions": {},
+      "finnhub_value_matches": {},
+      "completeness": "incomplete"
+    },
+    {
+      "candidate": "zacks_estimates",
+      "url": "https://www.zacks.com/stock/quote/AAPL/detailed-earning-estimates",
+      "shows": "estimates",
+      "captured": true,
+      "evidence_id": "ev_6705dba8f8083ce37cf9dfd8024b99efb63f4ce26009bc2b7ca56ceb86704649",
+      "document_status": 403,
+      "responses": 6,
+      "data_hosts": [
+        "www.zacks.com"
+      ],
+      "vendor_attributions": {},
+      "finnhub_value_matches": {},
+      "completeness": "complete"
+    },
+    {
+      "candidate": "seekingalpha_estimates",
+      "url": "https://seekingalpha.com/symbol/AAPL/earnings/estimates",
+      "shows": "estimates",
+      "captured": true,
+      "evidence_id": "ev_ed05ef7f19603543bd2dc55ba2f04db0990c39d697b3ad3a9ed03b01c327e1c4",
+      "document_status": 403,
+      "responses": 22,
+      "data_hosts": [
+        "client.px-cloud.net",
+        "collector-pxxgcxm9by.cl6.px-cloud.net",
+        "collector-pxxgcxm9by.px-client.net",
+        "dvp.px-cloud.net",
+        "fst-ec.perimeterx.net",
+        "ift.px-cloud.net",
+        "seekingalpha.com"
+      ],
+      "vendor_attributions": {},
+      "finnhub_value_matches": {
+        "epsEstimate_2dp": [
+          "2.02 @ seekingalpha.com"
+        ]
+      },
+      "completeness": "incomplete"
+    },
+    {
+      "candidate": "cnbc_earnings",
+      "url": "https://www.cnbc.com/quotes/AAPL?tab=earnings",
+      "shows": "estimates",
+      "captured": true,
+      "evidence_id": "ev_c0d5b3981f7cf667d941bff56ae9e10033f2458f829afb665f29576e30cd1daf",
+      "document_status": 200,
+      "responses": 159,
+      "data_hosts": [
+        "api.lab.amplitude.com",
+        "buy.tinypass.com",
+        "c2.piano.io",
+        "cdn.cookielaw.org",
+        "dpm.demdex.net",
+        "geo.cnbc.com",
+        "geolocation.onetrust.com",
+        "quote.cnbc.com",
+        "sp.auth.adobe.com",
+        "usanetwork.api.viewlift.com",
+        "webql-redesign.cnbcfm.com",
+        "www.cnbc.com"
+      ],
+      "vendor_attributions": {
+        "Dow Jones": [
+          "static-redesign.cnbcfm.com"
+        ],
+        "Polygon": [
+          "static-redesign.cnbcfm.com"
+        ],
+        "Xignite": [
+          "static-redesign.cnbcfm.com"
+        ],
+        "Yahoo": [
+          "cdn.cookielaw.org"
+        ]
+      },
+      "finnhub_value_matches": {
+        "epsEstimate_2dp": [
+          "2.02 @ static-redesign.cnbcfm.com",
+          "2.02 @ webql-redesign.cnbcfm.com"
+        ]
+      },
+      "completeness": "incomplete"
+    },
+    {
+      "candidate": "wsj_ratings",
+      "url": "https://www.wsj.com/market-data/quotes/AAPL/research-ratings",
+      "shows": "estimates+recommendations",
+      "captured": true,
+      "evidence_id": "ev_33da847510e456ace196bc5c48099429eb36688a1ffedf99bd38e2867ac8a047",
+      "document_status": 401,
+      "responses": 16,
+      "data_hosts": [
+        "geo.captcha-delivery.com"
+      ],
+      "vendor_attributions": {},
+      "finnhub_value_matches": {},
+      "completeness": "incomplete"
+    },
+    {
+      "candidate": "tipranks_forecast",
+      "url": "https://www.tipranks.com/stocks/aapl/forecast",
+      "shows": "recommendations",
+      "captured": true,
+      "evidence_id": "ev_332fb0cfa5de8f520e70208cd95ed61af9c1c727efda326df2a4ca5b29c9ea0a",
+      "document_status": 307,
+      "responses": 16,
+      "data_hosts": [
+        "challenges.cloudflare.com",
+        "hagen.challenges.cloudflare.com",
+        "www.tipranks.com"
+      ],
+      "vendor_attributions": {},
+      "finnhub_value_matches": {
+        "epsEstimate_2dp": [
+          "2.02 @ challenges.cloudflare.com"
+        ]
+      },
+      "completeness": "incomplete"
+    },
+    {
+      "candidate": "estimize",
+      "url": "https://www.estimize.com/aapl",
+      "shows": "estimates",
+      "captured": true,
+      "evidence_id": "ev_050e05980bc6bf5164129e5be621a80812dc77d7185f9e83a388e212608d769f",
+      "document_status": 200,
+      "responses": 45,
+      "data_hosts": [
+        "region1.analytics.google.com",
+        "www.estimize.com"
+      ],
+      "vendor_attributions": {
+        "Barchart": [
+          "www.estimize.com"
+        ],
+        "Estimize": [
+          "www.estimize.com"
+        ],
+        "I/B/E/S": [
+          "www.estimize.com"
+        ],
+        "Morningstar": [
+          "www.estimize.com"
+        ],
+        "Polygon": [
+          "www.estimize.com"
+        ],
+        "Thomson Reuters": [
+          "www.estimize.com"
+        ],
+        "Zacks": [
+          "www.estimize.com"
+        ]
+      },
+      "finnhub_value_matches": {
+        "epsEstimate_2dp": [
+          "2.02 @ www.estimize.com"
+        ]
+      },
+      "completeness": "incomplete"
+    },
+    {
+      "candidate": "marketbeat_forecast",
+      "url": "https://www.marketbeat.com/stocks/NASDAQ/AAPL/forecast/",
+      "shows": "recommendations",
+      "captured": true,
+      "evidence_id": "ev_22c22a6d43ef9a43313aa33b6f03fcf142f57eb561666d61a28f2ddcc06e2491",
+      "document_status": 200,
+      "responses": 115,
+      "data_hosts": [
+        "c.statcounter.com",
+        "ep1.adtrafficquality.google",
+        "fundingchoicesmessages.google.com",
+        "p.sitemana.com",
+        "pagead2.googlesyndication.com",
+        "region1.analytics.google.com",
+        "trc-events.taboola.com",
+        "www.marketbeat.com",
+        "z.clarity.ms"
+      ],
+      "vendor_attributions": {
+        "Barchart": [
+          "www.marketbeat.com"
+        ],
+        "Benzinga": [
+          "www.marketbeat.com"
+        ],
+        "Bloomberg": [
+          "pagead2.googlesyndication.com"
+        ],
+        "Dow Jones": [
+          "pagead2.googlesyndication.com"
+        ],
+        "FactSet": [
+          "pagead2.googlesyndication.com"
+        ],
+        "Investing.com": [
+          "www.marketbeat.com"
+        ],
+        "LSEG": [
+          "pagead2.googlesyndication.com"
+        ],
+        "MarketBeat": [
+          "onesignal.com",
+          "pagead2.googlesyndication.com",
+          "www.marketbeat.com"
+        ],
+        "Morningstar": [
+          "pagead2.googlesyndication.com"
+        ],
+        "Polygon": [
+          "www.marketbeat.com"
+        ],
+        "Refinitiv": [
+          "pagead2.googlesyndication.com"
+        ],
+        "Seeking Alpha": [
+          "pagead2.googlesyndication.com",
+          "www.marketbeat.com"
+        ],
+        "Thomson Reuters": [
+          "pagead2.googlesyndication.com"
+        ],
+        "Yahoo": [
+          "fundingchoicesmessages.google.com",
+          "pagead2.googlesyndication.com",
+          "www.marketbeat.com"
+        ],
+        "Zacks": [
+          "pagead2.googlesyndication.com"
+        ]
+      },
+      "finnhub_value_matches": {
+        "epsEstimate_2dp": [
+          "2.02 @ www.marketbeat.com"
+        ]
+      },
+      "completeness": "incomplete"
+    },
+    {
+      "candidate": "stockanalysis_forecast",
+      "url": "https://stockanalysis.com/stocks/aapl/forecast/",
+      "shows": "estimates+recommendations",
+      "captured": true,
+      "evidence_id": "ev_c03a7af4bd48c19a2853a45df717717c8eb3a6a7bd9c39030ca30781079b23b4",
+      "document_status": 200,
+      "responses": 118,
+      "data_hosts": [
+        "stockanalysis.com"
+      ],
+      "vendor_attributions": {
+        "Finnhub": [
+          "stockanalysis.com"
+        ],
+        "S&P Global": [
+          "stockanalysis.com"
+        ],
+        "TipRanks": [
+          "stockanalysis.com"
+        ]
+      },
+      "finnhub_value_matches": {
+        "epsEstimate_2dp": [
+          "2.02 @ stockanalysis.com"
+        ]
+      },
+      "completeness": "complete"
+    },
+    {
+      "candidate": "finviz_quote",
+      "url": "https://finviz.com/quote.ashx?t=AAPL",
+      "shows": "recommendations",
+      "captured": true,
+      "evidence_id": "ev_c202b863967f9b067ee103fcfa1e68e77b10e45e1bb428496b73d62af4de24c4",
+      "document_status": 307,
+      "responses": 31,
+      "data_hosts": [
+        "challenges.cloudflare.com",
+        "finviz.com",
+        "hagen.challenges.cloudflare.com"
+      ],
+      "vendor_attributions": {},
+      "finnhub_value_matches": {
+        "epsEstimate_2dp": [
+          "2.02 @ challenges.cloudflare.com",
+          "2.02 @ finviz.com"
+        ]
+      },
+      "completeness": "incomplete"
+    },
+    {
+      "candidate": "investing_consensus",
+      "url": "https://www.investing.com/equities/apple-computer-inc-consensus-estimates",
+      "shows": "estimates",
+      "captured": true,
+      "evidence_id": "ev_b5a02a3da33936fb0f563c04590e46d58215e122b71a6d56ac8bc876a25616b9",
+      "document_status": 403,
+      "responses": 1,
+      "data_hosts": [],
+      "vendor_attributions": {},
+      "finnhub_value_matches": {},
+      "completeness": "complete"
+    },
+    {
+      "candidate": "morningstar_quote",
+      "url": "https://www.morningstar.com/stocks/xnas/aapl/quote",
+      "shows": "estimates",
+      "captured": true,
+      "evidence_id": "ev_34be443a1e955b72f129e9d302d9b4a62bc72428df6bc7858a174494e7f512bc",
+      "document_status": 403,
+      "responses": 1,
+      "data_hosts": [],
+      "vendor_attributions": {},
+      "finnhub_value_matches": {},
+      "completeness": "complete"
+    },
+    {
+      "candidate": "macrotrends",
+      "url": "https://www.macrotrends.net/stocks/charts/AAPL/apple/eps-earnings-per-share-diluted",
+      "shows": "estimates",
+      "captured": true,
+      "evidence_id": "ev_082a0e580882f7733f4dfc5c8aec8d0a9e77edce03ae5e376ce542a0581b8fdb",
+      "document_status": 307,
+      "responses": 16,
+      "data_hosts": [
+        "challenges.cloudflare.com",
+        "hagen.challenges.cloudflare.com",
+        "www.macrotrends.net"
+      ],
+      "vendor_attributions": {},
+      "finnhub_value_matches": {
+        "epsEstimate_2dp": [
+          "2.02 @ challenges.cloudflare.com"
+        ]
+      },
+      "completeness": "incomplete"
+    },
+    {
+      "candidate": "apple_ir",
+      "url": "https://investor.apple.com/investor-relations/default.aspx",
+      "shows": "company IR",
+      "captured": true,
+      "evidence_id": "ev_20240d5b6ba2d650c37e4d28a09655cc83087350e053fd6e0c25eae057aa2c5b",
+      "document_status": 307,
+      "responses": 16,
+      "data_hosts": [
+        "challenges.cloudflare.com",
+        "hagen.challenges.cloudflare.com",
+        "investor.apple.com"
+      ],
+      "vendor_attributions": {},
+      "finnhub_value_matches": {
+        "epsEstimate_2dp": [
+          "2.02 @ challenges.cloudflare.com"
+        ]
+      },
+      "completeness": "incomplete"
+    },
+    {
+      "candidate": "finnhub_docs_recommendation",
+      "url": "https://finnhub.io/docs/api/recommendation-trends",
+      "shows": "provenance of Finnhub's own data",
+      "captured": true,
+      "evidence_id": "ev_e95dc97a48c3b69db4520e3ab15e8a96a630e0537919596a4459f9621ca05ffe",
+      "document_status": 200,
+      "responses": 163,
+      "data_hosts": [
+        "region1.analytics.google.com",
+        "region1.google-analytics.com",
+        "widget.finnhub.io"
+      ],
+      "vendor_attributions": {
+        "Bloomberg": [
+          "finnhub.io"
+        ],
+        "Finnhub": [
+          "finnhub.io",
+          "widget.finnhub.io"
+        ],
+        "LSEG": [
+          "finnhub.io"
+        ],
+        "Polygon": [
+          "finnhub.io"
+        ],
+        "Yahoo": [
+          "finnhub.io"
+        ]
+      },
+      "finnhub_value_matches": {
+        "epsEstimate_2dp": [
+          "2.02 @ widget.finnhub.io"
+        ]
+      },
+      "completeness": "incomplete"
+    },
+    {
+      "candidate": "finnhub_docs_earnings_calendar",
+      "url": "https://finnhub.io/docs/api/earnings-calendar",
+      "shows": "provenance of Finnhub's own data",
+      "captured": true,
+      "evidence_id": "ev_17bd5d4f2907a63931077e46cf1caf2a12f1296b764f896a80bfcaaf8e2b10b4",
+      "document_status": 200,
+      "responses": 163,
+      "data_hosts": [
+        "region1.google-analytics.com"
+      ],
+      "vendor_attributions": {
+        "Bloomberg": [
+          "finnhub.io"
+        ],
+        "Finnhub": [
+          "finnhub.io",
+          "widget.finnhub.io"
+        ],
+        "LSEG": [
+          "finnhub.io"
+        ],
+        "Polygon": [
+          "finnhub.io"
+        ],
+        "Yahoo": [
+          "finnhub.io"
+        ]
+      },
+      "finnhub_value_matches": {
+        "epsEstimate_2dp": [
+          "2.02 @ widget.finnhub.io"
+        ]
+      },
+      "completeness": "incomplete"
+    }
+  ]
+}
