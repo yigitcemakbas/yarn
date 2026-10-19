@@ -26,6 +26,15 @@ from pathlib import Path
 import httpx
 
 FINNHUB = "https://finnhub.io/api/v1"
+# How headlines name each default ticker, for loom's "headline names the company" filter.
+DEFAULT_NAMES = {
+    "AAPL": "Apple", "MSFT": "Microsoft", "NVDA": "Nvidia", "AMZN": "Amazon", "GOOGL": "Alphabet", "META": "Meta",
+    "TSLA": "Tesla", "JPM": "JPMorgan", "BAC": "Bank of America", "XOM": "Exxon", "CVX": "Chevron",
+    "JNJ": "Johnson & Johnson", "PFE": "Pfizer", "UNH": "UnitedHealth", "WMT": "Walmart", "KO": "Coca-Cola",
+    "PEP": "PepsiCo", "DIS": "Disney", "NFLX": "Netflix", "INTC": "Intel", "AMD": "AMD", "CRM": "Salesforce",
+    "ORCL": "Oracle", "BA": "Boeing", "CAT": "Caterpillar", "GE": "GE", "F": "Ford", "VZ": "Verizon",
+    "PLTR": "Palantir", "SOFI": "SoFi",
+}
 DEFAULT_TICKERS = [
     "AAPL", "MSFT", "NVDA", "AMZN", "GOOGL", "META", "TSLA", "JPM", "BAC", "XOM",
     "CVX", "JNJ", "PFE", "UNH", "WMT", "KO", "PEP", "DIS", "NFLX", "INTC",
@@ -134,7 +143,7 @@ def main():
 
     fh = Api(FINNHUB, Path(args.finnhub_key_file).read_text().strip(), pace=1.1)
     yn = Api(args.yarn_url, args.yarn_key, pace=0.0)
-    names = json.loads(args.names) if args.names else {}
+    names = {**DEFAULT_NAMES, **(json.loads(args.names) if args.names else {})}
     today = date.today()
     window = {"from": (today - timedelta(days=400)).isoformat(), "to": (today + timedelta(days=120)).isoformat()}
     news_window = {"from": (today - timedelta(days=60)).isoformat(), "to": today.isoformat()}

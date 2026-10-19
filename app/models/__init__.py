@@ -73,6 +73,10 @@ class NewsArticle(Base):
     origin: Mapped[str] = mapped_column(String(64))
     summary_basis: Mapped[str] = mapped_column(String(32), default="feed")
     headline_hash: Mapped[int] = mapped_column(BigInteger, index=True)
+    # 1 when the headline names a linked company: those are the items loom
+    # keeps, so their summaries are fetched first.
+    summary_priority: Mapped[int] = mapped_column(Integer, default=0, server_default="0")
+    summarized_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
     fetched_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
 
 
@@ -139,3 +143,13 @@ class RatingAction(Base):
     article_id: Mapped[int | None] = mapped_column(ForeignKey("news_articles.id", ondelete="SET NULL"))
 
     __table_args__ = (UniqueConstraint("ticker", "firm", "acted_on", name="uq_rating_action"),)
+
+
+class IngestCursor(Base):
+    """Where a stream ingester got to (the last GDELT GKG slot processed, say)."""
+
+    __tablename__ = "ingest_cursors"
+
+    name: Mapped[str] = mapped_column(String(64), primary_key=True)
+    value: Mapped[str] = mapped_column(Text)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())

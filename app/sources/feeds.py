@@ -3,7 +3,9 @@
 Each feed records why yarn may use it. Press-release wires distribute issuer
 announcements for republication; central-bank press releases are public
 statements (the Federal Reserve's are US-government works). Feeds marked
-`enabled=False` refused automated access when last checked (2026-10-19).
+`enabled=False` refused automated access when last checked (2026-10-19):
+GlobeNewswire answers 403 to every request from an honest User-Agent,
+robots.txt included, so it is not read.
 """
 
 import logging
@@ -37,6 +39,12 @@ FEEDS = [
          "company", "PRNewswire", "issuer press releases distributed for republication"),
     Feed("prnewswire-earnings", "https://www.prnewswire.com/rss/financial-services-latest-news/earnings-list.rss",
          "company", "PRNewswire", "issuer press releases distributed for republication"),
+    *[Feed(f"prnewswire-{slug.split('-latest')[0]}", f"https://www.prnewswire.com/rss/{slug}/{slug}-list.rss",
+           "company", "PRNewswire", "issuer press releases distributed for republication")
+      for slug in ("consumer-technology-latest-news", "health-latest-news", "energy-latest-news",
+                   "automotive-transportation-latest-news", "telecommunications-latest-news",
+                   "consumer-products-retail-latest-news", "heavy-industry-manufacturing-latest-news",
+                   "entertainment-media-latest-news")],
     Feed("prnewswire-ma", "https://www.prnewswire.com/rss/financial-services-latest-news/acquisitions-mergers-and-takeovers-list.rss",
          "merger", "PRNewswire", "issuer press releases distributed for republication"),
     Feed("businesswire-all", "https://feed.businesswire.com/rss/home/?rss=G1QFDERJXkJeEFtRWA==", "company", "BusinessWire",

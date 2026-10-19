@@ -51,6 +51,23 @@ class Settings(BaseSettings):
     # intc.com, a domain its releases never name).
     ir_calendar_overrides: str = "INTC=page:https://www.intc.com/news-events/ir-calendar"
 
+    # How far back the GDELT GKG stream starts on a fresh database, in hours.
+    # Each 15-minute file is about 5.5 MB, so a day of catch-up is ~500 MB.
+    gkg_backfill_hours: int = 24
+
+    # Extra headline names, as TICKER=alias;alias pairs separated by commas;
+    # added to companies.BRAND_ALIASES.
+    alias_overrides: str = ""
+
+    @property
+    def alias_override_map(self) -> dict[str, list[str]]:
+        out = {}
+        for pair in self.alias_overrides.split(","):
+            if "=" in pair:
+                ticker, names = pair.split("=", 1)
+                out[ticker.strip().upper()] = [n.strip().lower() for n in names.split(";") if n.strip()]
+        return out
+
     @property
     def ir_calendar_override_map(self) -> dict[str, tuple[str, str]]:
         out = {}

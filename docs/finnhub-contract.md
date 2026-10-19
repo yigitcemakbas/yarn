@@ -79,3 +79,27 @@ The submissions API's `acceptanceDateTime` is labelled UTC but is inconsistent a
 - For Apple, Meta, JPMorgan and PepsiCo it is shifted by the Eastern offset twice.
 
 The filing's SEC header (`<ACCEPTANCE-DATETIME>`, Eastern time) is authoritative, and yarn uses it for `hour`.
+
+## GDELT bulk files (yarn's news stream)
+
+`lastupdate.txt` lists each 15-minute file at `data.gdeltproject.org`, but on 2026-10-19 that host returned 404 for the files themselves. The same objects are served from `storage.googleapis.com/data.gdeltproject.org/gdeltv2/`, matching the size and MD5 the index lists.
+
+yarn links GKG articles to companies by headline only. GDELT's organisation tags were too noisy to use as a mention-level signal: share buttons made Meta and Alphabet "appear" in obituaries and local crime reports.
+
+## Company-news parity: where yarn stands (2026-10-19)
+
+Same 30 tickers, measured with `tools/shadow_compare.py`. "Kept by loom" means the headline names the company and the summary is at least 120 characters.
+
+| | Kept-by-loom items | Notes |
+|---|---|---|
+| Finnhub | 2,431 | Mostly Yahoo-syndicated items; the newest 250 per ticker cover about 5 days |
+| yarn, before this work | 707 | GDELT searches under broken aliases ("advanced" for AMD, "bank of america de") |
+| yarn, after | 1,321 | Fixed aliases, 1 day of GKG stream, 15 newswire feeds; at or above Finnhub for AAPL, NVDA, AMZN, META |
+
+Latency from publication to usable (summary in place), median over the last 3 hours:
+- GKG stream: about 72 minutes, mostly GDELT's own crawl delay
+- PR Newswire: 1–8 minutes
+
+The remaining gap is source coverage, not matching. GDELT crawls general news broadly (about 128k English articles a day) but carries little of the finance syndication (Yahoo Finance, Benzinga) behind most of Finnhub's items for names like SoFi, UnitedHealth or Bank of America. The free feeds of those publishers bar commercial reuse.
+
+Closing the rest needs either more days of GKG accumulation (yarn keeps the full stream rather than the newest 250) or a licensed finance-news feed for those outlets.

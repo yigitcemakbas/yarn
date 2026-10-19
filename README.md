@@ -4,7 +4,7 @@ yarn is loom's in-house replacement for the Finnhub API. It serves the endpoints
 
 | Endpoint | yarn's source | Parity |
 |---|---|---|
-| `/api/v1/company-news` | GDELT (publisher articles), PR Newswire and Business Wire (press releases), with publisher page descriptions as summaries | Same shape; different article set |
+| `/api/v1/company-news` | GDELT's 15-minute GKG stream (every article whose headline names a warm company), GDELT searches (backfill, mention-level), PR Newswire and Business Wire releases; summaries from the publisher's page description | Same shape; different article set (see `tools/shadow_compare.py`, `tools/news_freshness.py`) |
 | `/api/v1/news?category=` | GDELT topic queries, central-bank press releases, newswire M&A releases | Same shape; different article set |
 | `/api/v1/calendar/earnings` | SEC 8-K Item 2.02 filings, press-release exhibits, XBRL company facts; upcoming dates from company IR calendars (Q4 feeds and events pages), 8-K announcements and newswire releases | Dates, hour, fiscal quarter and actuals measured against Finnhub (see Verification). Estimates differ (see below) |
 | `/api/v1/stock/recommendation` | broker rating actions read from headlines | Same shape; partial coverage |
@@ -51,6 +51,7 @@ docker compose -f docker-compose.yml -f docker-compose.loom.yml up -d
   - GDELT company news in a 1-minute rotation
   - market news every 10 minutes
 - A ticker nobody has asked for yet is warmed on first request.
+- Company names that headlines use (`aliases`) are derived from SEC names, plus brand overrides in `app/pipelines/companies.py` (`BRAND_ALIASES`) and the `ALIAS_OVERRIDES` setting.
 
 ## The contract
 

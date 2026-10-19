@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-10-19T14:39:26.398965+00:00",
+  "run_at": "2026-10-19T16:54:38.454047+00:00",
   "tickers": {
     "AAPL": {
       "earnings": {
@@ -90,9 +90,9 @@
       },
       "news": {
         "finnhub_items": 248,
-        "finnhub_kept_by_loom": 11,
-        "yarn_items": 134,
-        "yarn_kept_by_loom": 1,
+        "finnhub_kept_by_loom": 88,
+        "yarn_items": 227,
+        "yarn_kept_by_loom": 95,
         "headline_recall": 0.0,
         "median_yarn_lead_seconds": null
       },
@@ -238,11 +238,11 @@
       },
       "news": {
         "finnhub_items": 250,
-        "finnhub_kept_by_loom": 13,
-        "yarn_items": 223,
-        "yarn_kept_by_loom": 3,
-        "headline_recall": 0.0,
-        "median_yarn_lead_seconds": null
+        "finnhub_kept_by_loom": 67,
+        "yarn_items": 250,
+        "yarn_kept_by_loom": 60,
+        "headline_recall": 0.045,
+        "median_yarn_lead_seconds": -5809
       },
       "recommendations": {
         "periods": [
@@ -354,11 +354,11 @@
       },
       "news": {
         "finnhub_items": 250,
-        "finnhub_kept_by_loom": 2,
-        "yarn_items": 199,
-        "yarn_kept_by_loom": 1,
-        "headline_recall": 0.5,
-        "median_yarn_lead_seconds": -7860
+        "finnhub_kept_by_loom": 22,
+        "yarn_items": 234,
+        "yarn_kept_by_loom": 42,
+        "headline_recall": 0.136,
+        "median_yarn_lead_seconds": -5375
       },
       "recommendations": {
         "periods": [
@@ -501,12 +501,12 @@
         ]
       },
       "news": {
-        "finnhub_items": 248,
-        "finnhub_kept_by_loom": 9,
-        "yarn_items": 198,
-        "yarn_kept_by_loom": 5,
-        "headline_recall": 0.111,
-        "median_yarn_lead_seconds": -7599
+        "finnhub_items": 247,
+        "finnhub_kept_by_loom": 44,
+        "yarn_items": 250,
+        "yarn_kept_by_loom": 72,
+        "headline_recall": 0.091,
+        "median_yarn_lead_seconds": -3600
       },
       "recommendations": {
         "periods": [
@@ -649,12 +649,12 @@
         ]
       },
       "news": {
-        "finnhub_items": 246,
-        "finnhub_kept_by_loom": 34,
-        "yarn_items": 186,
-        "yarn_kept_by_loom": 7,
-        "headline_recall": 0.029,
-        "median_yarn_lead_seconds": -7552
+        "finnhub_items": 244,
+        "finnhub_kept_by_loom": 26,
+        "yarn_items": 240,
+        "yarn_kept_by_loom": 18,
+        "headline_recall": 0.115,
+        "median_yarn_lead_seconds": -5809
       },
       "recommendations": {
         "periods": [
@@ -798,11 +798,11 @@
       },
       "news": {
         "finnhub_items": 248,
-        "finnhub_kept_by_loom": 71,
-        "yarn_items": 178,
-        "yarn_kept_by_loom": 34,
-        "headline_recall": 0.042,
-        "median_yarn_lead_seconds": -4913
+        "finnhub_kept_by_loom": 74,
+        "yarn_items": 250,
+        "yarn_kept_by_loom": 87,
+        "headline_recall": 0.068,
+        "median_yarn_lead_seconds": -4079
       },
       "recommendations": {
         "periods": [
@@ -946,11 +946,11 @@
       },
       "news": {
         "finnhub_items": 246,
-        "finnhub_kept_by_loom": 10,
-        "yarn_items": 160,
-        "yarn_kept_by_loom": 5,
-        "headline_recall": 0.0,
-        "median_yarn_lead_seconds": null
+        "finnhub_kept_by_loom": 100,
+        "yarn_items": 198,
+        "yarn_kept_by_loom": 80,
+        "headline_recall": 0.05,
+        "median_yarn_lead_seconds": -2982
       },
       "recommendations": {
         "periods": [
@@ -1093,11 +1093,11 @@
         ]
       },
       "news": {
-        "finnhub_items": 245,
-        "finnhub_kept_by_loom": 88,
-        "yarn_items": 216,
-        "yarn_kept_by_loom": 20,
-        "headline_recall": 0.011,
+        "finnhub_items": 246,
+        "finnhub_kept_by_loom": 93,
+        "yarn_items": 234,
+        "yarn_kept_by_loom": 35,
+        "headline_recall": 0.022,
         "median_yarn_lead_seconds": -3844
       },
       "recommendations": {
@@ -1242,9 +1242,9 @@
       },
       "news": {
         "finnhub_items": 249,
-        "finnhub_kept_by_loom": 18,
+        "finnhub_kept_by_loom": 99,
         "yarn_items": 250,
-        "yarn_kept_by_loom": 1,
+        "yarn_kept_by_loom": 7,
         "headline_recall": 0.0,
         "median_yarn_lead_seconds": null
       },
@@ -1414,11 +1414,11 @@
       },
       "news": {
         "finnhub_items": 248,
-        "finnhub_kept_by_loom": 21,
-        "yarn_items": 166,
-        "yarn_kept_by_loom": 13,
-        "headline_recall": 0.048,
-        "median_yarn_lead_seconds": -3115
+        "finnhub_kept_by_loom": 92,
+        "yarn_items": 250,
+        "yarn_kept_by_loom": 38,
+        "headline_recall": 0.054,
+        "median_yarn_lead_seconds": -2082
       },
       "recommendations": {
         "periods": [
@@ -1562,9 +1562,9 @@
       },
       "news": {
         "finnhub_items": 246,
-        "finnhub_kept_by_loom": 20,
-        "yarn_items": 157,
-        "yarn_kept_by_loom": 8,
+        "finnhub_kept_by_loom": 70,
+        "yarn_items": 166,
+        "yarn_kept_by_loom": 16,
         "headline_recall": 0.0,
         "median_yarn_lead_seconds": null
       },
@@ -1710,11 +1710,11 @@
       },
       "news": {
         "finnhub_items": 249,
-        "finnhub_kept_by_loom": 23,
-        "yarn_items": 217,
-        "yarn_kept_by_loom": 3,
-        "headline_recall": 0.0,
-        "median_yarn_lead_seconds": null
+        "finnhub_kept_by_loom": 74,
+        "yarn_items": 220,
+        "yarn_kept_by_loom": 8,
+        "headline_recall": 0.014,
+        "median_yarn_lead_seconds": -4162
       },
       "recommendations": {
         "periods": [
@@ -1858,11 +1858,11 @@
       },
       "news": {
         "finnhub_items": 246,
-        "finnhub_kept_by_loom": 20,
-        "yarn_items": 191,
-        "yarn_kept_by_loom": 10,
-        "headline_recall": 0.0,
-        "median_yarn_lead_seconds": null
+        "finnhub_kept_by_loom": 80,
+        "yarn_items": 194,
+        "yarn_kept_by_loom": 39,
+        "headline_recall": 0.025,
+        "median_yarn_lead_seconds": -5743
       },
       "recommendations": {
         "periods": [
@@ -2006,9 +2006,9 @@
       },
       "news": {
         "finnhub_items": 241,
-        "finnhub_kept_by_loom": 30,
+        "finnhub_kept_by_loom": 100,
         "yarn_items": 128,
-        "yarn_kept_by_loom": 20,
+        "yarn_kept_by_loom": 30,
         "headline_recall": 0.0,
         "median_yarn_lead_seconds": null
       },
@@ -2122,11 +2122,11 @@
       },
       "news": {
         "finnhub_items": 244,
-        "finnhub_kept_by_loom": 18,
-        "yarn_items": 197,
-        "yarn_kept_by_loom": 6,
-        "headline_recall": 0.056,
-        "median_yarn_lead_seconds": -7350
+        "finnhub_kept_by_loom": 88,
+        "yarn_items": 230,
+        "yarn_kept_by_loom": 52,
+        "headline_recall": 0.023,
+        "median_yarn_lead_seconds": -2929
       },
       "recommendations": {
         "periods": [
@@ -2269,12 +2269,12 @@
         ]
       },
       "news": {
-        "finnhub_items": 241,
-        "finnhub_kept_by_loom": 23,
-        "yarn_items": 177,
-        "yarn_kept_by_loom": 12,
-        "headline_recall": 0.043,
-        "median_yarn_lead_seconds": -10684
+        "finnhub_items": 242,
+        "finnhub_kept_by_loom": 73,
+        "yarn_items": 189,
+        "yarn_kept_by_loom": 37,
+        "headline_recall": 0.055,
+        "median_yarn_lead_seconds": -5356
       },
       "recommendations": {
         "periods": [
@@ -2416,11 +2416,11 @@
         ]
       },
       "news": {
-        "finnhub_items": 247,
-        "finnhub_kept_by_loom": 108,
-        "yarn_items": 172,
-        "yarn_kept_by_loom": 56,
-        "headline_recall": 0.009,
+        "finnhub_items": 248,
+        "finnhub_kept_by_loom": 94,
+        "yarn_items": 182,
+        "yarn_kept_by_loom": 54,
+        "headline_recall": 0.011,
         "median_yarn_lead_seconds": -10118
       },
       "recommendations": {
@@ -2565,10 +2565,10 @@
       },
       "news": {
         "finnhub_items": 239,
-        "finnhub_kept_by_loom": 100,
-        "yarn_items": 146,
-        "yarn_kept_by_loom": 57,
-        "headline_recall": 0.01,
+        "finnhub_kept_by_loom": 95,
+        "yarn_items": 208,
+        "yarn_kept_by_loom": 88,
+        "headline_recall": 0.011,
         "median_yarn_lead_seconds": -2597
       },
       "recommendations": {
@@ -2712,12 +2712,12 @@
         ]
       },
       "news": {
-        "finnhub_items": 248,
-        "finnhub_kept_by_loom": 24,
-        "yarn_items": 175,
-        "yarn_kept_by_loom": 3,
-        "headline_recall": 0.0,
-        "median_yarn_lead_seconds": null
+        "finnhub_items": 247,
+        "finnhub_kept_by_loom": 111,
+        "yarn_items": 250,
+        "yarn_kept_by_loom": 85,
+        "headline_recall": 0.018,
+        "median_yarn_lead_seconds": 5057
       },
       "recommendations": {
         "periods": [
@@ -2860,10 +2860,10 @@
         ]
       },
       "news": {
-        "finnhub_items": 242,
-        "finnhub_kept_by_loom": 14,
-        "yarn_items": 164,
-        "yarn_kept_by_loom": 1,
+        "finnhub_items": 243,
+        "finnhub_kept_by_loom": 64,
+        "yarn_items": 196,
+        "yarn_kept_by_loom": 38,
         "headline_recall": 0.0,
         "median_yarn_lead_seconds": null
       },
@@ -2878,8 +2878,14 @@
               2,
               0
             ],
-            "yarn": null,
-            "yarn_firms": 0
+            "yarn": [
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "yarn_firms": 1
           },
           {
             "period": "2026-08-01",
@@ -2890,7 +2896,13 @@
               3,
               0
             ],
-            "yarn": null,
+            "yarn": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
             "yarn_firms": 0
           },
           {
@@ -2902,7 +2914,13 @@
               3,
               0
             ],
-            "yarn": null,
+            "yarn": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
             "yarn_firms": 0
           },
           {
@@ -2914,7 +2932,13 @@
               4,
               0
             ],
-            "yarn": null,
+            "yarn": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
             "yarn_firms": 0
           }
         ]
@@ -3009,11 +3033,11 @@
       },
       "news": {
         "finnhub_items": 250,
-        "finnhub_kept_by_loom": 62,
-        "yarn_items": 185,
-        "yarn_kept_by_loom": 2,
-        "headline_recall": 0.0,
-        "median_yarn_lead_seconds": null
+        "finnhub_kept_by_loom": 60,
+        "yarn_items": 199,
+        "yarn_kept_by_loom": 12,
+        "headline_recall": 0.017,
+        "median_yarn_lead_seconds": -5375
       },
       "recommendations": {
         "periods": [
@@ -3125,11 +3149,11 @@
       },
       "news": {
         "finnhub_items": 241,
-        "finnhub_kept_by_loom": 25,
-        "yarn_items": 217,
-        "yarn_kept_by_loom": 11,
-        "headline_recall": 0.0,
-        "median_yarn_lead_seconds": null
+        "finnhub_kept_by_loom": 83,
+        "yarn_items": 222,
+        "yarn_kept_by_loom": 42,
+        "headline_recall": 0.012,
+        "median_yarn_lead_seconds": -2160
       },
       "recommendations": {
         "periods": [
@@ -3264,12 +3288,12 @@
         ]
       },
       "news": {
-        "finnhub_items": 246,
-        "finnhub_kept_by_loom": 13,
-        "yarn_items": 1,
-        "yarn_kept_by_loom": 0,
-        "headline_recall": 0.0,
-        "median_yarn_lead_seconds": null
+        "finnhub_items": 247,
+        "finnhub_kept_by_loom": 54,
+        "yarn_items": 185,
+        "yarn_kept_by_loom": 19,
+        "headline_recall": 0.019,
+        "median_yarn_lead_seconds": -8062
       },
       "recommendations": {
         "periods": [
@@ -3437,10 +3461,10 @@
       },
       "news": {
         "finnhub_items": 241,
-        "finnhub_kept_by_loom": 35,
-        "yarn_items": 190,
-        "yarn_kept_by_loom": 25,
-        "headline_recall": 0.029,
+        "finnhub_kept_by_loom": 102,
+        "yarn_items": 194,
+        "yarn_kept_by_loom": 37,
+        "headline_recall": 0.01,
         "median_yarn_lead_seconds": -7550
       },
       "recommendations": {
@@ -3587,7 +3611,7 @@
         "finnhub_items": 234,
         "finnhub_kept_by_loom": 81,
         "yarn_items": 167,
-        "yarn_kept_by_loom": 43,
+        "yarn_kept_by_loom": 41,
         "headline_recall": 0.012,
         "median_yarn_lead_seconds": -2082
       },
@@ -3734,10 +3758,10 @@
       "news": {
         "finnhub_items": 247,
         "finnhub_kept_by_loom": 128,
-        "yarn_items": 103,
-        "yarn_kept_by_loom": 31,
-        "headline_recall": 0.0,
-        "median_yarn_lead_seconds": null
+        "yarn_items": 114,
+        "yarn_kept_by_loom": 36,
+        "headline_recall": 0.016,
+        "median_yarn_lead_seconds": 1697
       },
       "recommendations": {
         "periods": [
@@ -3881,11 +3905,11 @@
       },
       "news": {
         "finnhub_items": 237,
-        "finnhub_kept_by_loom": 146,
-        "yarn_items": 100,
-        "yarn_kept_by_loom": 71,
-        "headline_recall": 0.021,
-        "median_yarn_lead_seconds": -4491
+        "finnhub_kept_by_loom": 87,
+        "yarn_items": 120,
+        "yarn_kept_by_loom": 52,
+        "headline_recall": 0.034,
+        "median_yarn_lead_seconds": -1800
       },
       "recommendations": {
         "periods": [
@@ -4029,10 +4053,10 @@
       },
       "news": {
         "finnhub_items": 245,
-        "finnhub_kept_by_loom": 11,
-        "yarn_items": 179,
-        "yarn_kept_by_loom": 14,
-        "headline_recall": 0.091,
+        "finnhub_kept_by_loom": 52,
+        "yarn_items": 184,
+        "yarn_kept_by_loom": 31,
+        "headline_recall": 0.019,
         "median_yarn_lead_seconds": -10264
       },
       "recommendations": {
@@ -4177,9 +4201,9 @@
       },
       "news": {
         "finnhub_items": 246,
-        "finnhub_kept_by_loom": 13,
-        "yarn_items": 220,
-        "yarn_kept_by_loom": 16,
+        "finnhub_kept_by_loom": 111,
+        "yarn_items": 233,
+        "yarn_kept_by_loom": 69,
         "headline_recall": 0.0,
         "median_yarn_lead_seconds": null
       },
@@ -4194,8 +4218,14 @@
               1,
               1
             ],
-            "yarn": null,
-            "yarn_firms": 0
+            "yarn": [
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "yarn_firms": 1
           },
           {
             "period": "2026-08-01",
@@ -4206,8 +4236,14 @@
               1,
               1
             ],
-            "yarn": null,
-            "yarn_firms": 0
+            "yarn": [
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "yarn_firms": 1
           },
           {
             "period": "2026-07-01",
@@ -4218,7 +4254,13 @@
               1,
               1
             ],
-            "yarn": null,
+            "yarn": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
             "yarn_firms": 0
           },
           {
@@ -4230,7 +4272,13 @@
               1,
               1
             ],
-            "yarn": null,
+            "yarn": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
             "yarn_firms": 0
           }
         ]
@@ -4326,8 +4374,8 @@
       "news": {
         "finnhub_items": 242,
         "finnhub_kept_by_loom": 119,
-        "yarn_items": 0,
-        "yarn_kept_by_loom": 0,
+        "yarn_items": 1,
+        "yarn_kept_by_loom": 1,
         "headline_recall": 0.0,
         "median_yarn_lead_seconds": null
       },

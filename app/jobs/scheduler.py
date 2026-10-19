@@ -4,8 +4,10 @@ Cadences are set by freshness targets, not convenience:
 
   EDGAR live 8-K feed   60 s   an earnings release is served within ~2 min
   newswire feeds        2 min  press releases, central banks
-  GDELT company news    1 min  round-robin over warm companies, oldest first,
-                               inside GDELT's one-request-per-6s budget
+  GDELT GKG stream      5 min  every article GDELT saw, matched to all warm
+                               companies at once (15-minute files)
+  GDELT company search  1 min  backfill for newly warm companies, and a top-up
+                               every 3 h, inside GDELT's 1-request-per-6s budget
   GDELT market news     10 min general / forex / crypto / merger
   article summaries     1 min  publisher page descriptions, newest first
   rating actions        daily  per warm company, rotating every 2 min
@@ -99,10 +101,28 @@ def poll_feeds() -> None:
     logger.info("Feeds: %d new items.", n)
 
 
+# The GKG stream carries every company's news continuously; per-company
+# searches backfill a newly warm company and top up the rest every few hours.
+COMPANY_SEARCH_REFRESH_HOURS = 3
+
+
+def gkg_stream() -> None:
+    with SessionLocal() as db:
+        try:
+            n = news.ingest_gkg(db)
+        except Exception:
+            db.rollback()
+            logger.exception("GDELT GKG ingest failed")
+            return
+    logger.info("GKG: %d articles linked to warm companies.", n)
+
+
 def rotate_company_news() -> None:
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=COMPANY_SEARCH_REFRESH_HOURS)
     with SessionLocal() as db:
         due = db.execute(
-            select(Company).where(Company.warm.is_(True))
+            select(Company).where(Company.warm.is_(True),
+                                  (Company.news_refreshed_at.is_(None)) | (Company.news_refreshed_at < cutoff))
             .order_by(Company.news_refreshed_at.asc().nullsfirst()).limit(GDELT_COMPANIES_PER_MINUTE)
         ).scalars().all()
         for c in due:
@@ -198,6 +218,7 @@ def main() -> None:
     sched.add_job(cold_start, "interval", seconds=30, next_run_time=now)
     sched.add_job(poll_edgar, "interval", seconds=60, next_run_time=now + timedelta(seconds=20))
     sched.add_job(poll_feeds, "interval", minutes=2, next_run_time=now + timedelta(seconds=10))
+    sched.add_job(gkg_stream, "interval", minutes=5, next_run_time=now + timedelta(seconds=15))
     sched.add_job(rotate_company_news, "interval", minutes=1, next_run_time=now + timedelta(seconds=40))
     sched.add_job(market_news, "interval", minutes=10, next_run_time=now + timedelta(minutes=1))
     sched.add_job(summaries, "interval", minutes=1, next_run_time=now + timedelta(seconds=50))

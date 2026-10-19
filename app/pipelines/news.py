@@ -2,8 +2,9 @@
 
 Three inputs feed one table:
 
-  GDELT        publisher articles, per company (company news) and per topic
-               (market news)
+  GDELT        publisher articles: the 15-minute GKG stream for every warm
+               company at once, per-company searches for backfill, and topic
+               searches for market news
   newswires    issuer press releases (PR Newswire, Business Wire), matched to
                companies by their "(NASDAQ: XYZ)" exchange tags, or by name
   regulators   central-bank press releases for the forex category
@@ -22,15 +23,16 @@ from datetime import date, datetime, timedelta, timezone
 from urllib.parse import urlparse, urlunparse
 
 from selectolax.parser import HTMLParser
-from sqlalchemy import select
+from sqlalchemy import select, update
 from sqlalchemy.dialects.postgresql import insert
 from sqlalchemy.orm import Session
 
-from app.models import Company, NewsArticle, NewsArticleSymbol, RatingAction
+from app.config import settings
+from app.models import Company, IngestCursor, NewsArticle, NewsArticleSymbol, RatingAction
 from app.pipelines import companies as company_names
 from app.pipelines import earnings_dates
 from app.pipelines.recommendations import parse_headline
-from app.sources import feeds, gdelt
+from app.sources import feeds, gdelt, gdelt_bulk
 from app.sources.base_scraper import BaseScraper
 from app.sources.news_article import extract_body, is_paywalled
 
@@ -85,9 +87,14 @@ class PageDescriptions(BaseScraper):
 
     def describe(self, url: str) -> tuple[str, str]:
         """(summary, og:title). Empty strings when the page cannot be read or forbids it."""
+        summary, title, _ = self.describe_full(url)
+        return summary, title
+
+    def describe_full(self, url: str) -> tuple[str, str, datetime | None]:
+        """(summary, og:title, the page's own publication time when it states one)."""
         page = self.fetch_html(url)
         if not page:
-            return "", ""
+            return "", "", None
         tree = HTMLParser(page)
 
         def meta(*names: str) -> str:
@@ -104,7 +111,30 @@ class PageDescriptions(BaseScraper):
                 summary = f"{summary} {lead}".strip() if summary else lead
             elif lead:
                 summary = lead
-        return _trim(summary), meta("og:title", "twitter:title")
+        published = _parse_published(meta("article:published_time", "og:published_time", "datePublished",
+                                          "pubdate", "parsely-pub-date", "sailthru.date") or _jsonld_published(page))
+        return _trim(summary), meta("og:title", "twitter:title"), published
+
+
+_JSONLD_PUBLISHED = re.compile(r'"datePublished"\s*:\s*"([^"]+)"')
+
+
+def _jsonld_published(page: str) -> str:
+    m = _JSONLD_PUBLISHED.search(page)
+    return m.group(1) if m else ""
+
+
+def _parse_published(raw: str) -> datetime | None:
+    """An ISO-8601 publication time as UTC; None when absent or unreadable."""
+    if not raw:
+        return None
+    try:
+        when = datetime.fromisoformat(raw.strip().replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    if when.tzinfo is None:
+        when = when.replace(tzinfo=timezone.utc)
+    return when.astimezone(timezone.utc)
 
 
 def _lead(page: str) -> str:
@@ -126,19 +156,28 @@ def _trim(text: str) -> str:
 def fill_summaries(db: Session, *, budget: int, describer: "PageDescriptions | None" = None) -> int:
     """Describe stored articles that have no summary yet, newest first."""
     describer = describer or PageDescriptions()
+    # Items whose headline names a linked company first: those are what loom keeps.
     pending = db.execute(
         select(NewsArticle).where(NewsArticle.summary_basis == "none")
-        .order_by(NewsArticle.published_at.desc()).limit(budget)
+        .order_by(NewsArticle.summary_priority.desc(), NewsArticle.published_at.desc()).limit(budget)
     ).scalars().all()
     # Pages are fetched in parallel across publishers; the shared per-host
     # limiter still spaces requests to any one domain.
     with ThreadPoolExecutor(max_workers=SUMMARY_WORKERS) as pool:
         described = list(pool.map(lambda a: _safe_describe(describer, a.url), pending))
-    for a, (summary, og_title) in zip(pending, described):
+    for a, (summary, og_title, published) in zip(pending, described):
         if og_title and len(og_title) > 10:
             a.headline = html.unescape(og_title)
+        # Finnhub's `datetime` is the publication time; GDELT's is when it first
+        # saw the page, often an hour or more later. The page's own time wins
+        # when it is earlier and plausible.
+        if published and a.published_at - timedelta(days=3) <= published < a.published_at:
+            a.published_at = published
+            db.execute(update(NewsArticleSymbol).where(NewsArticleSymbol.article_id == a.id)
+                       .values(published_at=published))
         a.summary = summary
         a.summary_basis = "publisher-page" if summary else "unavailable"
+        a.summarized_at = datetime.now(timezone.utc)
         if summary:
             tickers = list(db.execute(select(NewsArticleSymbol.ticker).where(NewsArticleSymbol.article_id == a.id)).scalars())
             if tickers:
@@ -147,19 +186,23 @@ def fill_summaries(db: Session, *, budget: int, describer: "PageDescriptions | N
     return len(pending)
 
 
-def _safe_describe(describer: "PageDescriptions", url: str) -> tuple[str, str]:
+def _safe_describe(describer: "PageDescriptions", url: str) -> tuple[str, str, datetime | None]:
     try:
-        return describer.describe(url)
+        if hasattr(describer, "describe_full"):
+            return describer.describe_full(url)
+        summary, title = describer.describe(url)
+        return summary, title, None
     except Exception:
         logger.info("Could not describe %s", url, exc_info=True)
-        return "", ""
+        return "", "", None
 
 
 def store_article(db: Session, *, url: str, headline: str, summary: str, source: str, image: str,
                   category: str, published_at: datetime, origin: str, summary_basis: str,
                   tickers: list[str]) -> int | None:
+    """Upsert one article and its symbols. Returns its id (an earlier article's when the headline repeats)."""
     date_source = "newswire" if origin.startswith("feed:") else "news"
-    """Upsert one article and its symbols. Returns its id, or None when it duplicates another headline."""
+    priority = 1 if tickers and _headline_names_any(db, headline, tickers) else 0
     aid = article_id(url)
     hh = _headline_hash(headline)
     dup = db.execute(
@@ -172,7 +215,11 @@ def store_article(db: Session, *, url: str, headline: str, summary: str, source:
         db.execute(insert(NewsArticle).values(
             id=aid, url=url, headline=headline, summary=summary, source=source, image=image, category=category,
             published_at=published_at, origin=origin, summary_basis=summary_basis, headline_hash=hh,
+            summary_priority=priority, summarized_at=datetime.now(timezone.utc) if summary else None,
         ).on_conflict_do_nothing(index_elements=[NewsArticle.id]))
+    if priority:
+        db.execute(update(NewsArticle).where(NewsArticle.id == aid, NewsArticle.summary_priority < priority)
+                   .values(summary_priority=priority))
     for t in tickers:
         db.execute(insert(NewsArticleSymbol).values(article_id=aid, ticker=t, published_at=published_at)
                    .on_conflict_do_nothing())
@@ -180,6 +227,13 @@ def store_article(db: Session, *, url: str, headline: str, summary: str, source:
         record_rating_action(db, aid, headline, tickers, published_at.date())
         record_earnings_date(db, headline, summary, tickers, source=date_source)
     return aid
+
+
+def _headline_names_any(db: Session, headline: str, tickers: list[str]) -> bool:
+    for c in db.execute(select(Company).where(Company.ticker.in_(tickers))).scalars():
+        if company_names.names_company(headline, c):
+            return True
+    return False
 
 
 def record_rating_action(db: Session, aid: int, headline: str, tickers: list[str], acted_on: date) -> None:
@@ -285,9 +339,108 @@ def reconfirm_from_stored(db: Session, *, days: int = 60) -> int:
     return len(rows)
 
 
+def primary_alias(company: Company) -> str:
+    """The name news is searched for: the most headline-like alias."""
+    return (company.aliases or company_names.core_name(company.name)).split("|")[0]
+
+
+# ---- GDELT GKG stream ------------------------------------------------------------------------
+
+GKG_CURSOR = "gdelt-gkg"
+# Slots processed per run: steady state needs 1 per 15 minutes; the margin is for catching up.
+GKG_MAX_SLOTS_PER_RUN = 12
+
+
+class CompanyMatcher:
+    """Which warm companies an article's headline names.
+
+    The GKG stream links on headlines only. GDELT's organisation tags were
+    tried as a mention-level signal and were mostly page furniture ("share on
+    Facebook" made Meta news of obituaries); mention-level links come from the
+    per-company searches, which require a markets context. Candidates come
+    from a token index on each alias's first word, so the cost per article does
+    not grow with the number of companies.
+    """
+
+    def __init__(self, companies_: list[Company]):
+        self.by_token: dict[str, list[Company]] = {}
+        for c in companies_:
+            keys = {company_names._norm(a).lower().split()[0] for a in (c.aliases or "").split("|") if a.strip()}
+            keys.add(c.ticker.lower())
+            for k in keys:
+                self.by_token.setdefault(k, []).append(c)
+
+    def match(self, title: str) -> list[Company]:
+        tokens = set(re.findall(r"[\w&']+", company_names._norm(title).lower()))
+        found: dict[str, Company] = {}
+        for tok in tokens:
+            for company in self.by_token.get(tok, []):
+                if company.ticker not in found and company_names.names_company(title, company):
+                    found[company.ticker] = company
+        return list(found.values())
+
+
+def _cursor(db: Session) -> datetime | None:
+    row = db.get(IngestCursor, GKG_CURSOR)
+    return datetime.fromisoformat(row.value) if row else None
+
+
+def _set_cursor(db: Session, slot: datetime) -> None:
+    row = db.get(IngestCursor, GKG_CURSOR)
+    if row is None:
+        db.add(IngestCursor(name=GKG_CURSOR, value=slot.isoformat()))
+    else:
+        row.value = slot.isoformat()
+
+
+def ingest_gkg_articles(db: Session, articles: list, matcher: CompanyMatcher) -> int:
+    stored = 0
+    for a in articles:
+        companies_ = matcher.match(clean_title(a.title))
+        if not companies_:
+            continue
+        store_article(db, url=a.url, headline=clean_title(a.title), summary="", source=gdelt.source_name(a.domain),
+                      image=a.image, category="company", published_at=a.seen_at, origin="gdelt-gkg",
+                      summary_basis="none", tickers=[c.ticker for c in companies_])
+        stored += 1
+    return stored
+
+
+def ingest_gkg(db: Session) -> int:
+    """Process GKG slots from the cursor to the newest file, a few per run."""
+    latest = gdelt_bulk.latest()
+    if latest is None:
+        return 0
+    warm = db.execute(select(Company).where(Company.warm.is_(True))).scalars().all()
+    if not warm:
+        return 0
+    matcher = CompanyMatcher(warm)
+    last = _cursor(db)
+    if last is None:
+        last = latest.slot - timedelta(hours=settings.gkg_backfill_hours) - gdelt_bulk.SLOT
+    slots = []
+    nxt = last + gdelt_bulk.SLOT
+    while nxt <= latest.slot and len(slots) < GKG_MAX_SLOTS_PER_RUN:
+        slots.append(nxt)
+        nxt += gdelt_bulk.SLOT
+    stored = 0
+    for slot in slots:
+        body = gdelt_bulk.download(latest if slot == latest.slot else slot)
+        if body is None:
+            # A missing slot (GDELT skips some) must not stall the stream.
+            if slot < latest.slot:
+                _set_cursor(db, slot)
+                db.commit()
+            continue
+        stored += ingest_gkg_articles(db, gdelt_bulk.parse(body), matcher)
+        _set_cursor(db, slot)
+        db.commit()
+    return stored
+
+
 def ingest_company_gdelt(db: Session, company: Company, *, since: datetime | None) -> int:
     """One GDELT pass for one company. Summaries are filled afterwards by fill_summaries."""
-    alias = (company.aliases or company_names.core_name(company.name)).split("|")[0]
+    alias = primary_alias(company)
     start = since or datetime.now(timezone.utc) - timedelta(days=60)
     articles = gdelt.search(gdelt.company_query(alias, company.ticker), start=start)
     stored = 0
@@ -309,7 +462,7 @@ def ingest_company_gdelt(db: Session, company: Company, *, since: datetime | Non
 
 def ingest_company_ratings(db: Session, company: Company) -> int:
     """Rating-action headlines for one company: since the last sweep, or GDELT's full window the first time."""
-    alias = (company.aliases or company_names.core_name(company.name)).split("|")[0]
+    alias = primary_alias(company)
     start = (company.ratings_refreshed_at - timedelta(hours=2)) if company.ratings_refreshed_at \
         else datetime.now(timezone.utc) - timedelta(days=90)
     stored = 0
@@ -365,6 +518,7 @@ def tickers_in(text: str, universe: dict[str, Company], headline: str) -> list[s
 
 def ingest_feeds(db: Session, *, universe: dict[str, Company] | None = None) -> int:
     universe = universe or {c.ticker: c for c in db.execute(select(Company)).scalars()}
+    matcher = CompanyMatcher([c for c in universe.values() if c.warm])
     stored = 0
     for feed in feeds.FEEDS:
         if not feed.enabled:
@@ -374,6 +528,10 @@ def ingest_feeds(db: Session, *, universe: dict[str, Company] | None = None) -> 
                 continue
             text = f"{item.title} {item.summary}"
             tickers = tickers_in(text, universe, item.title) if feed.category in ("company", "merger") else []
+            if not tickers and feed.category in ("company", "merger"):
+                # No exchange tag: a release whose headline names a warm company
+                # ("Cognizant and Google Cloud expand alliance") is its news too.
+                tickers = [c.ticker for c in matcher.match(html.unescape(item.title))]
             category = feed.category
             if category == "company" and not tickers:
                 # A release about no listed company is not company news.
